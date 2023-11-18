@@ -1,34 +1,49 @@
+// Imports
 @import "include-media";
 
+// Variables
 $main-background: #F8F7F4;
 $main-text: #343434;
-
 $breakpoints: (
     phone: 640px,
     tablet: 768px,
     desktop: 1024px
 ) !default;
 
+// Global
 body {
+    margin: 0;
     font-family: 'Inter', sans-serif;
+    color: $main-text;
+    background-color: $main-background;
 }
 
+
+// Mobile
 @include media (">= phone", "< tablet") {
-    h1 {
-        color: green;
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #profile-photo {
+            border-radius: 50%;
+            width: 100px;
+        }
+        a img {
+            width: 20px;
+        }
     }
+
 }
 
+// Tablet
 @include media (">= tablet", "< desktop") {
-    h1 {
-        color: red;
-    }
+
 }
 
+// Desktop
 @include media (">= desktop") {
-    h1 {
-        color: blue;
-    }
+
 }
 
 

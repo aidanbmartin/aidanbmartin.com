@@ -1,19 +1,21 @@
 body {
+  margin: 0;
   font-family: "Inter", sans-serif;
+  color: #343434;
+  background-color: #F8F7F4;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  h1 {
-    color: green;
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  h1 {
-    color: red;
+  .profile #profile-photo {
+    border-radius: 50%;
+    width: 100px;
   }
-}
-@media (min-width: 1024px) {
-  h1 {
-    color: blue;
+  .profile a img {
+    width: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
