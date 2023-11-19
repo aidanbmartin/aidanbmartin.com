@@ -71,11 +71,11 @@ p {
         height: 100vh;
         h1 {
             font-size: $mobile-h1-size;
-            letter-spacing: multiply-px($mobile-h1-size, $etter-spacing);
+            letter-spacing: multiply-px($mobile-h1-size, $letter-spacing);
         }
         h2 {
             font-size: $mobile-h3-size;
-            letter-spacing: multiply-px($mobile-h3-size, $etter-spacing);
+            letter-spacing: multiply-px($mobile-h3-size, $letter-spacing);
         }
         p {
             font-size: $mobile-p-size;
