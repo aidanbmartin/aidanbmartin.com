@@ -31,6 +31,9 @@ h1 {
     margin: 0px;
     font-weight: bold;
 }
+h2 {
+    margin: 0px;
+}
 p {
     margin: 0px;
 }
@@ -59,6 +62,7 @@ p {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        margin: 0px;
         height: 100vh;
         h1 {
             font-size: $mobile-h1-size;
@@ -69,10 +73,8 @@ p {
             letter-spacing: multiply-px($mobile-p-size, $mobile-letter-spacing);
             line-height: 2;
         }
-        .btn p {
-            font-size: 14px;
-        }
         .profile {
+            margin: 0px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -80,7 +82,7 @@ p {
             text-align: center;
             width: 85%;
             #profile-photo {
-                margin: 0px;
+                margin-bottom: 10px;
                 border-radius: 50%;
                 width: 148px;
                 height: 148px;;
@@ -105,12 +107,19 @@ p {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            h2 {
+                margin-bottom: 10px;
+            }
         }
         .read-more {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 50px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
         }
     }
 }

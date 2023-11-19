@@ -10,6 +10,10 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  margin: 0px;
+}
+
 p {
   margin: 0px;
 }
@@ -38,6 +42,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin: 0px;
     height: 100vh;
   }
   .landing-page h1 {
@@ -49,10 +54,8 @@ p {
     letter-spacing: 1.2px;
     line-height: 2;
   }
-  .landing-page .btn p {
-    font-size: 14px;
-  }
   .landing-page .profile {
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +64,7 @@ p {
     width: 85%;
   }
   .landing-page .profile #profile-photo {
-    margin: 0px;
+    margin-bottom: 10px;
     border-radius: 50%;
     width: 148px;
     height: 148px;
@@ -86,10 +89,17 @@ p {
     align-items: center;
     justify-content: space-between;
   }
+  .landing-page .contact h2 {
+    margin-bottom: 10px;
+  }
   .landing-page .read-more {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+  }
+  .landing-page .read-more img {
+    width: 24px;
+    height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
