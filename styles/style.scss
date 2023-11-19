@@ -12,7 +12,7 @@ $breakpoints: (
 ) !default;
 $letter-spacing: 0.1;
 $mobile-h1-size: 40px;
-$mobile-p-size: 11px;
+$mobile-p-size: 12px;
 $mobile-letter-spacing: 0.10px;
 
 // Functions
@@ -51,7 +51,6 @@ p {
         margin-left: 10px;
     }
 }
-
 
 // Mobile
 @include media (">= phone", "< tablet") {
