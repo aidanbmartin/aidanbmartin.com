@@ -2,38 +2,115 @@
 @import "include-media";
 
 // Variables
-$main-background: #F8F7F4;
-$main-text: #343434;
+$main-light: #F8F7F4;
+$main-dark: #343434;
+$accent: #518FB8;
 $breakpoints: (
     phone: 640px,
     tablet: 768px,
     desktop: 1024px
 ) !default;
+$letter-spacing: 0.1;
+$mobile-h1-size: 40px;
+$mobile-p-size: 11px;
+$mobile-letter-spacing: 0.10px;
+
+// Functions
+@function multiply-px($value1, $value2) {
+    @return $value1 * $value2 / 1px;
+}
 
 // Global
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    color: $main-text;
-    background-color: $main-background;
+    color: $main-dark;
+    background-color: $main-light;
+}
+h1 {
+    margin: 0px;
+    font-weight: bold;
+}
+p {
+    margin: 0px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $accent;
+    color: $main-light;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    img {
+        width: 20px;
+        margin-left: 10px;
+    }
 }
 
 
 // Mobile
 @include media (">= phone", "< tablet") {
-    .profile {
+    .landing-page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        #profile-photo {
-            border-radius: 50%;
-            width: 100px;
+        justify-content: space-around;
+        height: 100vh;
+        h1 {
+            font-size: $mobile-h1-size;
+            letter-spacing: multiply-px($mobile-h1-size, $mobile-letter-spacing);
         }
-        a img {
-            width: 20px;
+        p {
+            font-size: $mobile-p-size;
+            letter-spacing: multiply-px($mobile-p-size, $mobile-letter-spacing);
+            line-height: 2;
+        }
+        .btn p {
+            font-size: 14px;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            width: 70%;
+            #profile-photo {
+                margin: 0px;
+                border-radius: 50%;
+                width: 148px;
+            }
+            .social-links {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                img {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    padding: 5px;
+                    width: 24px;
+                }
+            } 
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .read-more {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
-
 }
 
 // Tablet

@@ -5,17 +5,88 @@ body {
   background-color: #F8F7F4;
 }
 
+h1 {
+  margin: 0px;
+  font-weight: bold;
+}
+
+p {
+  margin: 0px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #518FB8;
+  color: #F8F7F4;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+}
+.btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
-  .profile {
+  .landing-page {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 100vh;
   }
-  .profile #profile-photo {
+  .landing-page h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .landing-page p {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    line-height: 2;
+  }
+  .landing-page .btn p {
+    font-size: 14px;
+  }
+  .landing-page .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 70%;
+  }
+  .landing-page .profile #profile-photo {
+    margin: 0px;
     border-radius: 50%;
-    width: 100px;
+    width: 148px;
   }
-  .profile a img {
-    width: 20px;
+  .landing-page .profile .social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .landing-page .profile .social-links img {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    width: 24px;
+  }
+  .landing-page .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .landing-page .read-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
