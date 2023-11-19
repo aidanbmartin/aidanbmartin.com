@@ -34,13 +34,19 @@ p {
   text-align: center;
   border: none;
   border-radius: 10px;
+  transition: 0.2s;
+  text-decoration: none;
 }
 .btn img {
   width: 20px;
   margin-left: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+.btn:hover {
+  background-color: #376686;
+}
+
+@media (min-width: 320px) {
   .landing-page {
     display: flex;
     flex-direction: column;
@@ -76,6 +82,7 @@ p {
     border-radius: 50%;
     width: 148px;
     height: 148px;
+    filter: drop-shadow(5px 5px 15px #343434);
   }
   .landing-page .profile .social-links {
     display: flex;
@@ -88,8 +95,8 @@ p {
     margin-right: 10px;
     margin-left: 10px;
     padding: 5px;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
   .landing-page .contact {
     display: flex;
