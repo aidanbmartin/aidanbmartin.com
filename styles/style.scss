@@ -12,8 +12,10 @@ $breakpoints: (
 ) !default;
 $letter-spacing: 0.1;
 $mobile-h1-size: 40px;
+$mobile-h2-size: 36px;
+$mobile-h3-size: 24px;
 $mobile-p-size: 12px;
-$mobile-letter-spacing: 0.10px;
+$letter-spacing: 0.10px;
 
 // Functions
 @function multiply-px($value1, $value2) {
@@ -32,6 +34,9 @@ h1 {
     font-weight: bold;
 }
 h2 {
+    margin: 0px;
+}
+h3 {
     margin: 0px;
 }
 p {
@@ -66,11 +71,15 @@ p {
         height: 100vh;
         h1 {
             font-size: $mobile-h1-size;
-            letter-spacing: multiply-px($mobile-h1-size, $mobile-letter-spacing);
+            letter-spacing: multiply-px($mobile-h1-size, $etter-spacing);
+        }
+        h2 {
+            font-size: $mobile-h3-size;
+            letter-spacing: multiply-px($mobile-h3-size, $etter-spacing);
         }
         p {
             font-size: $mobile-p-size;
-            letter-spacing: multiply-px($mobile-p-size, $mobile-letter-spacing);
+            letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
             line-height: 2;
         }
         .profile {
