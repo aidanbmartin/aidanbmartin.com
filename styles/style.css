@@ -3,26 +3,24 @@ body {
   font-family: "Inter", sans-serif;
   color: #343434;
   background-color: #F8F7F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-h1 {
+body h1 {
   margin: 0px;
   font-weight: bold;
 }
-
-h2 {
+body h2 {
   margin: 0px;
 }
-
-h3 {
+body h3 {
   margin: 0px;
 }
-
-p {
+body p {
   margin: 0px;
 }
-
-.btn {
+body .btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,84 +35,109 @@ p {
   transition: 0.2s;
   text-decoration: none;
 }
-.btn img {
+body .btn img {
   width: 20px;
   margin-left: 10px;
 }
-
-.btn:hover {
+body .btn:hover {
   background-color: #376686;
 }
 
 @media (min-width: 320px) {
-  .landing-page {
+  .page {
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 0px;
     height: 800px;
+    text-align: center;
   }
-  .landing-page h1 {
+  .page h1 {
     font-size: 40px;
     letter-spacing: 4px;
   }
-  .landing-page h2 {
+  .page h2 {
     font-size: 24px;
     letter-spacing: 2.4px;
   }
-  .landing-page p {
+  .page p {
     font-size: 12px;
     letter-spacing: 1.2px;
     line-height: 2;
   }
-  .landing-page .profile {
+  .page .profile {
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
-    width: 85%;
   }
-  .landing-page .profile #profile-photo {
+  .page .profile #profile-photo {
     margin-bottom: 10px;
     border-radius: 50%;
     width: 148px;
     height: 148px;
     filter: drop-shadow(5px 5px 15px #343434);
   }
-  .landing-page .profile .social-links {
+  .page .profile .social-links {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .landing-page .profile .social-links img {
+  .page .profile .social-links img {
     margin-right: 10px;
     margin-left: 10px;
     padding: 5px;
     width: 30px;
     height: 30px;
   }
-  .landing-page .contact {
+  .page .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  .landing-page .contact h2 {
+  .page .contact h2 {
     margin-bottom: 10px;
   }
-  .landing-page .read-more {
+  .page .read-more {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
   }
-  .landing-page .read-more img {
+  .page .read-more img {
     width: 24px;
     height: 24px;
+  }
+  .page .skill-grid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .page .skill-grid .skill {
+    background-color: #F8F7F4;
+    margin: 8px;
+    height: 66px;
+    width: 66px;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 8px #787878);
+  }
+  .page .skill-grid .skill img {
+    margin: 11px;
+    width: 44px;
+    height: 44px;
+  }
+  #skill-page {
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -18,9 +18,9 @@ $mobile-h3-size: 24px;
 $mobile-p-size: 12px;
 $letter-spacing: 0.10px;
 
-// Functions
+// Helper Functions
 @function multiply-px($value1, $value2) {
-    @return $value1 * $value2 / 1px;
+    @return calc($value1 * $value2 / 1px);
 }
 
 // Global
@@ -29,52 +29,56 @@ body {
     font-family: 'Inter', sans-serif;
     color: $main-dark;
     background-color: $main-light;
-}
-h1 {
-    margin: 0px;
-    font-weight: bold;
-}
-h2 {
-    margin: 0px;
-}
-h3 {
-    margin: 0px;
-}
-p {
-    margin: 0px;
-}
-.btn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: $accent;
-    color: $main-light;
-    cursor: pointer;
-    padding: 10px 20px;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    transition: 0.2s;
-    img {
-        width: 20px;
-        margin-left: 10px;
+    h1 {
+        margin: 0px;
+        font-weight: bold;
     }
-    text-decoration: none;
+    h2 {
+        margin: 0px;
+    }
+    h3 {
+        margin: 0px;
+    }
+    p {
+        margin: 0px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $accent;
+        color: $main-light;
+        cursor: pointer;
+        padding: 10px 20px;
+        text-align: center;
+        border: none;
+        border-radius: 10px;
+        transition: 0.2s;
+        img {
+            width: 20px;
+            margin-left: 10px;
+        }
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: $accent-dim;
+    }
 }
-.btn:hover {
-    background-color: $accent-dim;
-}
-
 // Mobile
 @include media (">= phone") {//, "< tablet") {
-    .landing-page {
+    .page {
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         margin: 0px;
         height: 800px;
+        text-align: center;
         h1 {
             font-size: $mobile-h1-size;
             letter-spacing: multiply-px($mobile-h1-size, $letter-spacing);
@@ -94,8 +98,8 @@ p {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            text-align: center;
-            width: 85%;
+            
+            
             #profile-photo {
                 margin-bottom: 10px;
                 border-radius: 50%;
@@ -137,6 +141,32 @@ p {
                 height: 24px;
             }
         }
+        .skill-grid {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            .skill {
+                background-color: $main-light;
+                margin: 8px;
+                height: 66px;
+                width: 66px;
+                border-radius: 10px;
+                filter: drop-shadow(4px 4px 8px #787878);
+                img {
+                    margin: 11px;
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+        }
+    }
+    #skill-page {
+        justify-content: flex-start;
     }
 }
 
