@@ -4,7 +4,7 @@
 // Variables
 $main-light: #F8F7F4;
 $main-dark: #343434;
-$accent: #518FB8;
+$accent: #861F41;
 $accent-dim: darken($accent, 15);
 $letter-spacing: 0.1;
 $mobile-h1-size: 40px;
@@ -34,18 +34,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
+    h1, h2, h3, p {
         margin: 0px;
-        font-weight: bold;
-    }
-    h2 {
-        margin: 0px;
-    }
-    h3 {
-        margin: 0px;
-    }
-    p {
-        margin: 0px;
+        
     }
     .btn {
         display: flex;
@@ -57,6 +48,7 @@ body {
         cursor: pointer;
         padding: 10px 20px;
         text-align: center;
+        font-weight: bold;
         border: none;
         border-radius: 10px;
         transition: 0.2s;
@@ -101,8 +93,6 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            
-            
             #profile-photo {
                 margin-bottom: 10px;
                 border-radius: 50%;
@@ -112,16 +102,19 @@ body {
             }
             .social-links {
                 display: flex;
+                width: 100px;
                 flex-direction: row;
                 align-items: center;
-                margin-top: 10px;
-                margin-bottom: 30px;
-                img {
-                    margin-right: 10px;
-                    margin-left: 10px;
-                    padding: 5px;
-                    width: 30px;
-                    height: 30px;
+                justify-content: space-around;
+                height: 40px;
+                padding: 10px;
+                margin-bottom: 20px;
+                a {
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
                 }
             } 
         }
@@ -138,10 +131,19 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px;
             margin-bottom: 50px;
+            transition: 0.2s;
             img {
+                transition: 0.2s;
                 width: 24px;
                 height: 24px;
+            }
+        }
+        .read-more:hover {
+            margin-bottom: 40px;
+            img {
+                margin-top: 10px;
             }
         }
         .skill-grid {
