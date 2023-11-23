@@ -85,6 +85,7 @@ html {
 // Mobile
 @include media (">= phone") {//, "< tablet") {
     .mobile-menu {
+        padding: 10px;
         margin: 30px 30px;
         transition: 0.5s;
         label {

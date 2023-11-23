@@ -55,6 +55,7 @@ html body footer p {
 
 @media (min-width: 320px) {
   .mobile-menu {
+    padding: 10px;
     margin: 30px 30px;
     transition: 0.5s;
   }
