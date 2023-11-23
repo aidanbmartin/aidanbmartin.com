@@ -124,6 +124,7 @@ html {
         background-image: url(../images/icons/close-svgrepo-com.svg);
     }
     input:checked ~ .topnav {
+        overflow: visible;
         opacity: 1;
         height: 100;
     }
