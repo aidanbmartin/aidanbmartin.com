@@ -76,7 +76,7 @@ html body footer p {
     overflow: hidden;
     background-color: #F8F7F4;
     border-radius: 10px;
-    filter: drop-shadow(4px 4px 8px #787878);
+    -webkit-filter: drop-shadow(4px 4px 8px #787878);
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;

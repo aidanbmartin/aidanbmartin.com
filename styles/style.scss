@@ -105,7 +105,7 @@ html {
             overflow: hidden;
             background-color: $main-light;
             border-radius: 10px;
-            filter: drop-shadow(4px 4px 8px #787878);
+            -webkit-filter: drop-shadow(4px 4px 8px #787878);
             appearance: none;
             a {
                 display: block;
