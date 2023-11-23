@@ -82,9 +82,6 @@ html {
     }
 }
 
-
-
-
 // Mobile
 @include media (">= phone") {//, "< tablet") {
     .mobile-menu {
@@ -93,7 +90,7 @@ html {
         label {
             display: block;
             cursor: pointer;
-            background: url(/aidanbmartin.com/images/icons/menu.svg) no-repeat left center;
+            background: url(../images/icons/menu.svg) no-repeat left center;
             padding: 10px;
             font-size: 20px;
             transition: 0.1s;
@@ -124,7 +121,7 @@ html {
         display: none;
     }
     input:checked ~ label {
-        background-image: url(/aidanbmartin.com/images/icons/close-svgrepo-com.svg);
+        background-image: url(../images/icons/close-svgrepo-com.svg);
     }
     input:checked ~ .topnav {
         opacity: 1;
