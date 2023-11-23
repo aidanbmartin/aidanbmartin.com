@@ -1,16 +1,27 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  position: relative;
   margin: 0;
   font-family: "Inter", sans-serif;
   color: #343434;
   background-color: #F8F7F4;
+}
+html body header {
+  position: absolute;
+  z-index: 2;
+}
+html body main {
+  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body h1, body h2, body h3, body p {
+html body main h1, html body main h2, html body main h3, html body main p {
   margin: 0px;
 }
-body .btn {
+html body main .btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,15 +37,66 @@ body .btn {
   transition: 0.2s;
   text-decoration: none;
 }
-body .btn img {
+html body main .btn img {
   width: 20px;
   margin-left: 10px;
 }
-body .btn:hover {
+html body main .btn:hover {
   background-color: #481123;
+}
+html body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body footer p {
+  font-size: 10px;
 }
 
 @media (min-width: 320px) {
+  .mobile-menu {
+    margin: 30px 30px;
+    transition: 0.5s;
+  }
+  .mobile-menu label {
+    display: block;
+    cursor: pointer;
+    background: url(/aidanbmartin.com/images/icons/menu.svg) no-repeat left center;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.1s;
+  }
+  .mobile-menu .topnav {
+    display: block;
+    padding: 10px 40px 10px 20px;
+    margin-top: 10px;
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+    height: -10;
+    overflow: hidden;
+    background-color: #F8F7F4;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 8px #787878);
+  }
+  .mobile-menu .topnav a {
+    display: block;
+    text-decoration: none;
+    color: #343434;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 2;
+  }
+  input#menu {
+    display: none;
+  }
+  input:checked ~ label {
+    background-image: url(/aidanbmartin.com/images/icons/close-svgrepo-com.svg);
+  }
+  input:checked ~ .topnav {
+    opacity: 1;
+    height: 100;
+  }
   .page {
     width: 85%;
     display: flex;
