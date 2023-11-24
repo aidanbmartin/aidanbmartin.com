@@ -99,7 +99,7 @@ html body footer p {
     padding: 10px 40px 10px 20px;
     margin-top: 10px;
     transition: opacity 0.1s ease-out;
-    width: 75%;
+    width: 60%;
     opacity: 0;
     height: -10;
     overflow: hidden;
@@ -137,13 +137,13 @@ html body footer p {
     height: 100;
   }
   .page {
+    height: 800px;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 0px;
-    height: 800px;
     text-align: center;
   }
   .page h1 {
@@ -159,21 +159,24 @@ html body footer p {
     letter-spacing: 1.2px;
     line-height: 2;
   }
-  .page .profile {
+  #landing-page {
+    height: 800px;
+  }
+  #landing-page .profile {
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  .page .profile #profile-photo {
+  #landing-page .profile #profile-photo {
     margin-bottom: 10px;
     border-radius: 50%;
     width: 148px;
     height: 148px;
     box-shadow: var(--shadow-elevation-medium);
   }
-  .page .profile .social-links {
+  #landing-page .profile .social-links {
     display: flex;
     width: 150px;
     flex-direction: row;
@@ -181,47 +184,53 @@ html body footer p {
     justify-content: space-between;
     height: 50px;
   }
-  .page .profile .social-links a {
+  #landing-page .profile .social-links a {
     display: inline-block;
     position: relative;
     width: 50px;
     height: 50px;
   }
-  .page .profile .social-links a img {
+  #landing-page .profile .social-links a img {
     display: block;
     width: 30px;
     height: 30px;
     padding: 10px;
   }
-  .page .contact {
+  #landing-page .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-  .page .contact h2 {
+  #landing-page .contact h2 {
     margin-bottom: 10px;
   }
-  .page .read-more {
+  #landing-page .read-more {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     margin-bottom: 50px;
+    text-decoration: none;
     transition: 0.2s ease-out;
+    color: #343434;
   }
-  .page .read-more img {
+  #landing-page .read-more img {
     transition: 0.2s ease-out;
     width: 24px;
     height: 24px;
   }
-  .page .read-more:hover {
+  #landing-page .read-more:hover {
     margin-bottom: 40px;
   }
-  .page .read-more:hover img {
+  #landing-page .read-more:hover img {
     margin-top: 10px;
   }
-  .page .skill-grid {
+  #skill-page {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  #skill-page .skill-grid {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 100%;
@@ -231,26 +240,32 @@ html body footer p {
     align-items: center;
     justify-content: center;
   }
-  .page .skill-grid .skill {
+  #skill-page .skill-grid .skill {
     background-color: #F8F7F4;
-    margin: 8px;
+    margin: 16px;
     height: 66px;
     width: 66px;
     border-radius: 10px;
     box-shadow: var(--shadow-elevation-medium);
     transition: 0.1s ease-out;
   }
-  .page .skill-grid .skill img {
+  #skill-page .skill-grid .skill img {
     margin: 11px;
     width: 44px;
     height: 44px;
   }
-  .page .skill-grid .skill:hover {
+  #skill-page .skill-grid .skill p {
+    font-size: 10px;
+  }
+  #skill-page .skill-grid .skill:hover {
     box-shadow: var(--shadow-elevation-high);
     transform: translate(0, -5px);
     transition: 0.3s ease-out;
   }
-  #skill-page {
-    justify-content: flex-start;
+  #projects-page {
+    height: 800px;
+  }
+  #photography-page {
+    height: 800px;
   }
 }/*# sourceMappingURL=style.css.map */

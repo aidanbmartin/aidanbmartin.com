@@ -131,7 +131,7 @@ html {
             padding: 10px 40px 10px 20px;
             margin-top: 10px;
             transition: opacity 0.1s ease-out;
-            width: 75%;
+            width: 60%;
             opacity: 0;
             height: -10;
             overflow: hidden;
@@ -168,13 +168,13 @@ html {
         height: 100;
     }
     .page {
+        height: 800px;
         width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         margin: 0px;
-        height: 800px;
         text-align: center;
         h1 {
             font-size: $mobile-h1-size;
@@ -189,6 +189,9 @@ html {
             letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
             line-height: 2;
         }
+    }
+    #landing-page {
+        height: 800px;
         .profile {
             margin: 0px;
             display: flex;
@@ -238,7 +241,9 @@ html {
             align-items: center;
             padding: 10px;
             margin-bottom: 50px;
+            text-decoration: none;
             transition: 0.2s ease-out;
+            color: $main-dark;
             img {
                 transition: 0.2s ease-out;
                 width: 24px;
@@ -251,6 +256,10 @@ html {
                 margin-top: 10px;
             }
         }
+    }
+    #skill-page {
+        justify-content: flex-start;
+        margin-bottom: 40px;
         .skill-grid {
             margin-top: 40px;
             margin-bottom: 40px;
@@ -262,7 +271,7 @@ html {
             justify-content: center;
             .skill {
                 background-color: $main-light;
-                margin: 8px;
+                margin: 16px;
                 height: 66px;
                 width: 66px;
                 border-radius: 10px;
@@ -273,6 +282,9 @@ html {
                     width: 44px;
                     height: 44px;
                 }
+                p {
+                    font-size: 10px;
+                }
             }
             .skill:hover {
                 box-shadow: var(--shadow-elevation-high);
@@ -281,8 +293,11 @@ html {
             }
         }
     }
-    #skill-page {
-        justify-content: flex-start;
+    #projects-page {
+        height: 800px;
+    }
+    #photography-page {
+        height: 800px;
     }
 }
 
