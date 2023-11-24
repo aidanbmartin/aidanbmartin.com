@@ -7,7 +7,7 @@ This is my second attempt at building such a website, and I made the mistake of 
 <img src="https://github.com/aidanbmartin/aidanbmartin.com/blob/main/images/screenshots/FigmaScreenshot.png" alt="Website design screenshot." width="250"/>
 
 ## Step 2: Development
-My first goal in the development process was to initialize my files and file structure. I chose to use a SCSS to CSS compiler to allow me to use variables and functions in the styling of the site. I also wanted to get the site published so that I could ensure that my media queries were working. URL is aidanbmartin.com, purchased through Google Domains and hosted with Netlify. I used the inlude-media Sass project (https://eduardoboucas.github.io/include-media) to handle my media queries and breakpoints.
+My first goal in the development process was to initialize my files and file structure. I chose to use a SCSS to CSS compiler to allow me to use variables and functions in the styling of the site. I also wanted to get the site published so that I could ensure that my media queries were working. URL is aidanbmartin.com, purchased through Google Domains and hosted with Netlify. I used the inlude-media SASS project (https://eduardoboucas.github.io/include-media) to handle my media queries and breakpoints. CSS shadow pallete generated from Josh Comeau's Shadow Pallete Generator (https://www.joshwcomeau.com/shadow-palette/).
 
 Current status: Website currently displays mobile design regardless of screen size, will implement designs for larger sizes after completong mobile design.
 
