@@ -26,7 +26,7 @@ $breakpoints: (
     @return calc($value1 * $value2 / 1px);
 }
 
-// Shadow token pallete generated from Josh Comeau's Shadow Pallete Generator https://www.joshwcomeau.com/shadow-palette/
+// Shadow pallete generated from Josh Comeau's Shadow Pallete Generator https://www.joshwcomeau.com/shadow-palette/
 :root {
     --shadow-color: 45deg 7% 44%;
     --shadow-elevation-low:
@@ -63,6 +63,7 @@ html {
         color: $main-dark;
         background-color: $main-light;
         header {
+            width: 100%;
             position: absolute;
             z-index: 2;
         }
@@ -88,7 +89,7 @@ html {
                 font-weight: bold;
                 border: none;
                 border-radius: 10px;
-                transition: 0.2s;
+                transition: 0.2s ease-out;
                 box-shadow: var(--shadow-elevation-low);
                 img {
                     width: 20px;
@@ -115,20 +116,20 @@ html {
 @include media (">= phone") {//, "< tablet") {
     .mobile-menu {
         margin: 30px 30px;
-        transition: 0.5s;
+        width: 75%;
         label {
             display: block;
             cursor: pointer;
             background: url(../images/icons/menu.svg) no-repeat left center;
             padding: 10px;
             font-size: 20px;
-            transition: 0.1s;
+            transition: 0.1s ease-out;
         }
         .topnav {
             display: block;
             padding: 10px 40px 10px 20px;
             margin-top: 10px;
-            transition: opacity 0.3s ease-out;
+            transition: opacity 0.1s ease-out;
             opacity: 0;
             height: -10;
             overflow: hidden;
@@ -144,6 +145,10 @@ html {
                 font-size: $mobile-p-size;
                 letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
                 line-height: 2;
+                transition: 0.1s ease-out;
+            }
+            a:hover {
+                font-weight: bold;
             }
         }
     }
@@ -202,22 +207,14 @@ html {
                 height: 40px;
                 margin-bottom: 20px;
                 a {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 40px;
-                    height: 40px;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
                     img {
-                        padding: 10px;
-                        margin-top: 5px;
+                        display: block;
                         width: 30px;
                         height: 30px;
-                        transition: 0.2s;
-                    }
-                    img:hover {
-                        margin: 0px;
-                        width: 40px;
-                        height: 40px;
+                        padding: 10px;
                     }
                 }
             } 
@@ -266,7 +263,7 @@ html {
                 width: 66px;
                 border-radius: 10px;
                 box-shadow: var(--shadow-elevation-medium);
-                transition: 0.1s;
+                transition: 0.1s ease-out;
                 img {
                     margin: 11px;
                     width: 44px;
@@ -276,7 +273,7 @@ html {
             .skill:hover {
                 box-shadow: var(--shadow-elevation-high);
                 transform: translate(0, -5px);
-                transition: 0.3s;
+                transition: 0.3s ease-out;
             }
         }
     }

@@ -34,6 +34,7 @@ html body {
   background-color: #F8F7F4;
 }
 html body header {
+  width: 100%;
   position: absolute;
   z-index: 2;
 }
@@ -59,7 +60,7 @@ html body main .btn {
   font-weight: bold;
   border: none;
   border-radius: 10px;
-  transition: 0.2s;
+  transition: 0.2s ease-out;
   box-shadow: var(--shadow-elevation-low);
   text-decoration: none;
 }
@@ -82,7 +83,7 @@ html body footer p {
 @media (min-width: 320px) {
   .mobile-menu {
     margin: 30px 30px;
-    transition: 0.5s;
+    width: 75%;
   }
   .mobile-menu label {
     display: block;
@@ -90,13 +91,13 @@ html body footer p {
     background: url(../images/icons/menu.svg) no-repeat left center;
     padding: 10px;
     font-size: 20px;
-    transition: 0.1s;
+    transition: 0.1s ease-out;
   }
   .mobile-menu .topnav {
     display: block;
     padding: 10px 40px 10px 20px;
     margin-top: 10px;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.1s ease-out;
     opacity: 0;
     height: -10;
     overflow: hidden;
@@ -115,6 +116,10 @@ html body footer p {
     font-size: 12px;
     letter-spacing: 1.2px;
     line-height: 2;
+    transition: 0.1s ease-out;
+  }
+  .mobile-menu .topnav a:hover {
+    font-weight: bold;
   }
   input#menu {
     display: none;
@@ -174,23 +179,15 @@ html body footer p {
     margin-bottom: 20px;
   }
   .page .profile .social-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40px;
-    height: 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
   }
   .page .profile .social-links a img {
-    padding: 10px;
-    margin-top: 5px;
+    display: block;
     width: 30px;
     height: 30px;
-    transition: 0.2s;
-  }
-  .page .profile .social-links a img:hover {
-    margin: 0px;
-    width: 40px;
-    height: 40px;
+    padding: 10px;
   }
   .page .contact {
     display: flex;
@@ -237,7 +234,7 @@ html body footer p {
     width: 66px;
     border-radius: 10px;
     box-shadow: var(--shadow-elevation-medium);
-    transition: 0.1s;
+    transition: 0.1s ease-out;
   }
   .page .skill-grid .skill img {
     margin: 11px;
@@ -247,7 +244,7 @@ html body footer p {
   .page .skill-grid .skill:hover {
     box-shadow: var(--shadow-elevation-high);
     transform: translate(0, -5px);
-    transition: 0.3s;
+    transition: 0.3s ease-out;
   }
   #skill-page {
     justify-content: flex-start;
