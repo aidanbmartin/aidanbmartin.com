@@ -36,7 +36,6 @@ html body {
 html body header {
   width: 100%;
   position: absolute;
-  z-index: 2;
 }
 html body main {
   z-index: 0;
@@ -89,15 +88,18 @@ html body footer p {
     display: block;
     cursor: pointer;
     background: url(../images/icons/menu.svg) no-repeat left center;
+    width: 20px;
+    height: 20px;
     padding: 10px;
-    font-size: 20px;
     transition: 0.1s ease-out;
   }
   .mobile-menu .topnav {
     display: block;
+    position: absolute;
     padding: 10px 40px 10px 20px;
     margin-top: 10px;
     transition: opacity 0.1s ease-out;
+    width: 75%;
     opacity: 0;
     height: -10;
     overflow: hidden;
@@ -106,6 +108,7 @@ html body footer p {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+    z-index: 0;
     box-shadow: var(--shadow-elevation-medium);
   }
   .mobile-menu .topnav a {
@@ -130,6 +133,7 @@ html body footer p {
   input:checked ~ .topnav {
     overflow: visible;
     opacity: 1;
+    z-index: 2;
     height: 100;
   }
   .page {
@@ -171,15 +175,15 @@ html body footer p {
   }
   .page .profile .social-links {
     display: flex;
-    width: 100px;
+    width: 150px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
-    margin-bottom: 20px;
+    height: 50px;
   }
   .page .profile .social-links a {
-    display: block;
+    display: inline-block;
+    position: relative;
     width: 50px;
     height: 50px;
   }
