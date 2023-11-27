@@ -114,27 +114,32 @@ html {
 // Mobile
 @include media (">= phone") {//, "< tablet") {
     .mobile-menu {
-        margin: 30px 30px;
+        position: fixed;
+        margin: 20px 20px;
         width: 75%;
         label {
             display: block;
             cursor: pointer;
-            background: url(../images/icons/menu.svg) no-repeat left center;
+            //z-index: 2;
+            background: url(../images/icons/menu.svg) no-repeat center center;
+            //background-color: $main-light;
             width: 20px;
             height: 20px;
             padding: 10px;
             transition: 0.1s ease-out;
+            border-radius: 5px;
+            //box-shadow: var(--shadow-elevation-low);
         }
         .topnav {
-            display: block;
+            display: none;
             position: absolute;
             padding: 10px 40px 10px 20px;
             margin-top: 10px;
             transition: opacity 0.1s ease-out;
-            width: 60%;
-            opacity: 0;
-            height: -10;
-            overflow: hidden;
+            width: 100%;
+            //opacity: 0;
+            //height: -10;
+            //overflow: hidden;
             background-color: $main-light;
             border-radius: 10px;
             appearance: none;
@@ -162,10 +167,11 @@ html {
         background-image: url(../images/icons/close-svgrepo-com.svg);
     }
     input:checked ~ .topnav {
-        overflow: visible;
-        opacity: 1;
-        z-index: 2;
-        height: 100;
+        display: block;
+        //overflow: visible;
+        //opacity: 1;
+        //z-index: 10;
+        //height: 100;
     }
     .page {
         height: 800px;
@@ -214,7 +220,7 @@ html {
                 height: 50px;
                 a {
                     display: inline-block;
-                    position: relative;
+                    //position: relative;
                     width: 50px;
                     height: 50px;
                     img {

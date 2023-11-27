@@ -81,28 +81,27 @@ html body footer p {
 
 @media (min-width: 320px) {
   .mobile-menu {
-    margin: 30px 30px;
+    position: fixed;
+    margin: 20px 20px;
     width: 75%;
   }
   .mobile-menu label {
     display: block;
     cursor: pointer;
-    background: url(../images/icons/menu.svg) no-repeat left center;
+    background: url(../images/icons/menu.svg) no-repeat center center;
     width: 20px;
     height: 20px;
     padding: 10px;
     transition: 0.1s ease-out;
+    border-radius: 5px;
   }
   .mobile-menu .topnav {
-    display: block;
+    display: none;
     position: absolute;
     padding: 10px 40px 10px 20px;
     margin-top: 10px;
     transition: opacity 0.1s ease-out;
-    width: 60%;
-    opacity: 0;
-    height: -10;
-    overflow: hidden;
+    width: 100%;
     background-color: #F8F7F4;
     border-radius: 10px;
     -webkit-appearance: none;
@@ -131,10 +130,7 @@ html body footer p {
     background-image: url(../images/icons/close-svgrepo-com.svg);
   }
   input:checked ~ .topnav {
-    overflow: visible;
-    opacity: 1;
-    z-index: 2;
-    height: 100;
+    display: block;
   }
   .page {
     height: 800px;
@@ -186,7 +182,6 @@ html body footer p {
   }
   #landing-page .profile .social-links a {
     display: inline-block;
-    position: relative;
     width: 50px;
     height: 50px;
   }
