@@ -77,6 +77,13 @@ html body main .grid {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+html body main .icon {
+  transition: 0.2s ease-out;
+  width: 24px;
+  height: 24px;
 }
 html body footer {
   display: flex;
@@ -139,14 +146,13 @@ html body footer p {
   }
   input:checked ~ .topnav {
     display: block;
+    z-index: -10;
   }
   .page {
-    height: 800px;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     margin: 0px;
     text-align: center;
   }
@@ -164,6 +170,7 @@ html body footer p {
     line-height: 2;
   }
   #landing-page {
+    justify-content: space-around;
     height: 800px;
   }
   #landing-page .profile {
@@ -224,11 +231,6 @@ html body footer p {
     transition: 0.2s ease-out;
     color: #343434;
   }
-  #landing-page .read-more img {
-    transition: 0.2s ease-out;
-    width: 24px;
-    height: 24px;
-  }
   #landing-page .read-more:hover {
     margin-bottom: 40px;
   }
@@ -239,41 +241,120 @@ html body footer p {
     justify-content: flex-start;
     margin-bottom: 40px;
   }
-  #skill-page #skill-grid {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  #skill-page #xcode-icon {
+    padding-left: 3px;
   }
-  #skill-page #skill-grid .skill {
+  #skill-page .skill {
     background-color: #F8F7F4;
     margin: 16px;
-    height: 66px;
-    width: 66px;
-    border-radius: 10px;
-    box-shadow: var(--shadow-elevation-medium);
+    height: 72px;
+    width: 72px;
     transition: 0.1s ease-out;
+    position: relative;
+    border-radius: 10px;
+    z-index: 2;
   }
-  #skill-page #skill-grid .skill img {
-    margin: 11px;
-    width: 44px;
-    height: 44px;
+  #skill-page .skill img {
+    margin: 12px;
+    width: 48px;
+    height: 48px;
   }
-  #skill-page #skill-grid .skill p {
+  #skill-page .skill p {
+    margin: 2px;
     font-size: 10px;
   }
-  #skill-page #skill-grid .skill:hover {
+  #skill-page .skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: var(--shadow-elevation-medium);
+    pointer-events: none;
+    transition: 0.1s ease-out;
+  }
+  #skill-page .skill:hover::before {
+    z-index: -1;
     box-shadow: var(--shadow-elevation-high);
+    transition: 0.3s ease-out;
+  }
+  #skill-page .skill:hover {
     transform: translate(0, -5px);
     transition: 0.3s ease-out;
   }
   #project-page {
-    height: 800px;
-    justify-content: flex-start;
     margin-bottom: 40px;
+    justify-content: flex-start;
   }
-  #project-page #project-grid .project {
+  #project-page .project {
+    position: relative;
     background-color: #F8F7F4;
+    margin: 16px;
+    height: 256px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.1s ease-out;
+  }
+  #project-page .project .project-thumbnail {
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #project-page .project .project-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+    padding: 16px;
+    padding-top: 8px;
+    text-align: left;
+  }
+  #project-page .project .project-desc h3 {
+    padding: 0px;
+    margin: 0px;
+    align-self: flex-start;
+  }
+  #project-page .project .project-desc p {
+    margin-top: 8px;
+  }
+  #project-page .project .project-desc a {
+    color: #343434;
+    text-decoration: none;
+    display: flex;
+    align-self: flex-end;
+  }
+  #project-page .project::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: var(--shadow-elevation-medium);
+    pointer-events: none;
+    transition: 0.1s ease-out;
+  }
+  #project-page .project:hover::before {
+    z-index: -1;
+    box-shadow: var(--shadow-elevation-high);
+    transition: 0.3s ease-out;
+  }
+  #project-page .project:hover {
+    transform: translate(0, -5px);
+    transition: 0.3s ease-out;
   }
   #photography-page {
     height: 800px;
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

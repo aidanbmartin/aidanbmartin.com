@@ -7,12 +7,12 @@ $main-light: #F8F7F4;
 $main-dark: #343434;
 $accent: #861F41;
 $accent-dim: darken($accent, 15);
-$letter-spacing: 0.1;
 $mobile-h1-size: 40px;
 $mobile-h2-size: 36px;
 $mobile-h3-size: 24px;
 $mobile-p-size: 12px;
-$letter-spacing: 0.10px;
+$mobile-letter-spacing: 0.10px;
+$mobile-skill-size: 72px;
 
 $breakpoints: (
     phone: 640px,
@@ -106,6 +106,13 @@ html {
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .icon {
+                transition: 0.2s ease-out;
+                width: 24px;
+                height: 24px;
             }
         }
         footer {
@@ -159,7 +166,7 @@ html {
                 color: $main-dark;
                 padding: 10px;
                 font-size: $mobile-p-size;
-                letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
+                letter-spacing: multiply-px($mobile-p-size, $mobile-letter-spacing);
                 line-height: 2;
                 transition: 0.1s ease-out;
             }
@@ -178,33 +185,34 @@ html {
         display: block;
         //overflow: visible;
         //opacity: 1;
-        //z-index: 10;
+        z-index: -10;
         //height: 100;
     }
     .page {
-        height: 800px;
+        //height: 800px;
         width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        
         margin: 0px;
         text-align: center;
         h1 {
             font-size: $mobile-h1-size;
-            letter-spacing: multiply-px($mobile-h1-size, $letter-spacing);
+            letter-spacing: multiply-px($mobile-h1-size, $mobile-letter-spacing);
         }
         h2 {
             font-size: $mobile-h3-size;
-            letter-spacing: multiply-px($mobile-h3-size, $letter-spacing);
+            letter-spacing: multiply-px($mobile-h3-size, $mobile-letter-spacing);
         }
         p {
             font-size: $mobile-p-size;
-            letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
+            letter-spacing: multiply-px($mobile-p-size, $mobile-letter-spacing);
             line-height: 2;
         }
     }
     #landing-page {
+        justify-content: space-around;
         height: 800px;
         .profile {
             margin: 0px;
@@ -266,11 +274,6 @@ html {
             text-decoration: none;
             transition: 0.2s ease-out;
             color: $main-dark;
-            img {
-                transition: 0.2s ease-out;
-                width: 24px;
-                height: 24px;
-            }
         }
         .read-more:hover {
             margin-bottom: 40px;
@@ -282,46 +285,123 @@ html {
     #skill-page {
         justify-content: flex-start;
         margin-bottom: 40px;
-        #skill-grid {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            .skill {
-                background-color: $main-light;
-                margin: 16px;
-                height: 66px;
-                width: 66px;
-                border-radius: 10px;
-                box-shadow: var(--shadow-elevation-medium);
-                transition: 0.1s ease-out;
-                img {
-                    margin: 11px;
-                    width: 44px;
-                    height: 44px;
-                }
-                p {
-                    font-size: 10px;
-                }
+        #xcode-icon {
+            padding-left: 3px;
+        }
+        .skill {
+            background-color: $main-light;
+            margin: 16px;
+            height: $mobile-skill-size;
+            width: $mobile-skill-size;
+            transition: 0.1s ease-out;
+            position: relative;
+            border-radius: 10px;
+            z-index: 2;
+            img {
+                margin: 12px;
+                width: $mobile-skill-size - 24;
+                height: $mobile-skill-size - 24;
             }
-            .skill:hover {
-                box-shadow: var(--shadow-elevation-high);
-                transform: translate(0, -5px);
-                transition: 0.3s ease-out;
+            p {
+                margin: 2px;
+                font-size: 10px;
             }
         }
+        .skill::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .skill:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .skill:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
+        }
+
     }
     #project-page {
-        height: 800px;
-        justify-content: flex-start;
         margin-bottom: 40px;
-        #project-grid {
-            .project {
-                background-color: $main-light;
-                
+        justify-content: flex-start;
+        .project {
+            position: relative;
+            //overflow: hidden;
+            background-color: $main-light;
+            margin: 16px;
+            height: 256px;
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.1s ease-out;
+            .project-thumbnail {
+                object-fit: cover;
+                padding: 0px;
+                margin: 0px;
+                height: 50%;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;;
             }
+            .project-desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                align-self: flex-start;
+                padding: 16px;
+                padding-top: 8px;
+                text-align: left;
+                h3 {
+                    padding: 0px;
+                    margin: 0px;
+                    align-self: flex-start;
+                }
+                p {
+                    margin-top: 8px;;
+                }
+                a {
+                    color: $main-dark;
+                    text-decoration: none;
+                    display: flex;
+                    align-self: flex-end;
+                }
+            }
+        }
+        .project::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .project:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .project:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
         }
     }
     #photography-page {
         height: 800px;
+        justify-content: flex-start;
     }
 }
 
