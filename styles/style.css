@@ -36,9 +36,9 @@ html body {
 html body header {
   width: 100%;
   position: absolute;
+  z-index: 10;
 }
 html body main {
-  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,11 +104,12 @@ html body footer p {
     display: block;
     cursor: pointer;
     background: url(../images/icons/menu.svg) no-repeat center center;
+    background-color: #F8F7F4;
     width: 20px;
     height: 20px;
     padding: 10px;
     transition: 0.1s ease-out;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   .mobile-menu .topnav {
     display: none;
@@ -146,7 +147,6 @@ html body footer p {
   }
   input:checked ~ .topnav {
     display: block;
-    z-index: -10;
   }
   .page {
     width: 85%;
@@ -293,7 +293,6 @@ html body footer p {
     position: relative;
     background-color: #F8F7F4;
     margin: 16px;
-    height: 256px;
     width: 100%;
     border-radius: 10px;
     transition: 0.1s ease-out;
@@ -314,7 +313,6 @@ html body footer p {
     justify-content: space-between;
     align-self: flex-start;
     padding: 16px;
-    padding-top: 8px;
     text-align: left;
   }
   #project-page .project .project-desc h3 {
@@ -323,13 +321,54 @@ html body footer p {
     align-self: flex-start;
   }
   #project-page .project .project-desc p {
-    margin-top: 8px;
+    margin-top: 16px;
+    align-self: flex-start;
   }
   #project-page .project .project-desc a {
+    margin-top: 16px;
     color: #343434;
     text-decoration: none;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     align-self: flex-end;
+    transition: 0.1s ease-out;
+  }
+  #project-page .project .project-desc a p {
+    margin-top: 0px;
+    margin-right: 8px;
+  }
+  #project-page .project .project-desc a:hover {
+    font-weight: bold;
+    transition: 0.1s ease-out;
+  }
+  #project-page .project .project-desc .languages {
+    margin-top: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+  #project-page .project .project-desc .languages p {
+    font-size: 10px;
+    display: block;
+    margin-top: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: #F8F7F4;
+    border-radius: 20px;
+  }
+  #project-page .project .project-desc .languages .lang-1 {
+    background-color: orangered;
+  }
+  #project-page .project .project-desc .languages .lang-2 {
+    background-color: blue;
+  }
+  #project-page .project .project-desc .languages .lang-3 {
+    background-color: plum;
   }
   #project-page .project::before {
     content: "";
