@@ -13,6 +13,8 @@ $mobile-h3-size: 24px;
 $mobile-p-size: 12px;
 $mobile-letter-spacing: 0.10px;
 $mobile-skill-size: 72px;
+$mobile-proj-width: 100%;
+$mobile-photo-width: 100%;
 
 $breakpoints: (
     phone: 640px,
@@ -296,7 +298,7 @@ html {
             transition: 0.1s ease-out;
             position: relative;
             border-radius: 10px;
-            z-index: 2;
+            //z-index: 1;
             img {
                 margin: 12px;
                 width: $mobile-skill-size - 24;
@@ -340,7 +342,7 @@ html {
             background-color: $main-light;
             margin: 16px;
             //height: 256px;
-            width: 100%;
+            width: $mobile-proj-width;
             border-radius: 10px;
             transition: 0.1s ease-out;
             a {
@@ -438,8 +440,46 @@ html {
         }
     }
     #photography-page {
-        height: 800px;
+        //height: 800px;
         justify-content: flex-start;
+        .genre {
+            background-color: $main-light;
+            background-image: url(../images/photography/aviation.webp);
+            background-size: cover;
+            background-position: center center;
+            margin: 16px;
+            width: $mobile-photo-width;
+            aspect-ratio: 3 / 2;
+            transition: 0.1s ease-out;
+            position: relative;
+            border-radius: 10px;
+            a {
+                text-decoration: none;
+                color: $main-light;
+            }
+        }
+        .genre::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .genre:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .genre:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
+        }
     }
 }
 

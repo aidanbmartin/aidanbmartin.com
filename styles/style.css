@@ -252,7 +252,6 @@ html body footer p {
     transition: 0.1s ease-out;
     position: relative;
     border-radius: 10px;
-    z-index: 2;
   }
   #skill-page .skill img {
     margin: 12px;
@@ -391,7 +390,44 @@ html body footer p {
     transition: 0.3s ease-out;
   }
   #photography-page {
-    height: 800px;
     justify-content: flex-start;
+  }
+  #photography-page .genre {
+    background-color: #F8F7F4;
+    background-image: url(../images/photography/aviation.webp);
+    background-size: cover;
+    background-position: center center;
+    margin: 16px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    transition: 0.1s ease-out;
+    position: relative;
+    border-radius: 10px;
+  }
+  #photography-page .genre a {
+    text-decoration: none;
+    color: #F8F7F4;
+  }
+  #photography-page .genre::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: -1;
+    box-shadow: var(--shadow-elevation-medium);
+    pointer-events: none;
+    transition: 0.1s ease-out;
+  }
+  #photography-page .genre:hover::before {
+    z-index: -1;
+    box-shadow: var(--shadow-elevation-high);
+    transition: 0.3s ease-out;
+  }
+  #photography-page .genre:hover {
+    transform: translate(0, -5px);
+    transition: 0.3s ease-out;
   }
 }/*# sourceMappingURL=style.css.map */
