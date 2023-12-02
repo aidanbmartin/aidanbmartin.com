@@ -297,6 +297,10 @@ html body footer p {
     border-radius: 10px;
     transition: 0.1s ease-out;
   }
+  #project-page .project a {
+    text-decoration: none;
+    color: #343434;
+  }
   #project-page .project .project-thumbnail {
     -o-object-fit: cover;
        object-fit: cover;
@@ -324,10 +328,8 @@ html body footer p {
     margin-top: 16px;
     align-self: flex-start;
   }
-  #project-page .project .project-desc a {
+  #project-page .project .project-desc .view-github {
     margin-top: 16px;
-    color: #343434;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -335,13 +337,9 @@ html body footer p {
     align-self: flex-end;
     transition: 0.1s ease-out;
   }
-  #project-page .project .project-desc a p {
+  #project-page .project .project-desc .view-github p {
     margin-top: 0px;
     margin-right: 8px;
-  }
-  #project-page .project .project-desc a:hover {
-    font-weight: bold;
-    transition: 0.1s ease-out;
   }
   #project-page .project .project-desc .languages {
     margin-top: 8px;

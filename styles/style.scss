@@ -343,6 +343,10 @@ html {
             width: 100%;
             border-radius: 10px;
             transition: 0.1s ease-out;
+            a {
+                text-decoration: none;
+                color: $main-dark;
+            }
             .project-thumbnail {
                 object-fit: cover;
                 padding: 0px;
@@ -368,10 +372,8 @@ html {
                     margin-top: 16px;
                     align-self: flex-start;
                 }
-                a {
-                    margin-top: 16px;;
-                    color: $main-dark;
-                    text-decoration: none;
+                .view-github {
+                    margin-top: 16px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -382,10 +384,6 @@ html {
                         margin-top: 0px;
                         margin-right: 8px;
                     }
-                }
-                a:hover {
-                    font-weight: bold;
-                    transition: 0.1s ease-out;
                 }
                 .languages {
                     margin-top: 8px;
