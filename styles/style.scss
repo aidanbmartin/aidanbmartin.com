@@ -488,13 +488,19 @@ html {
             transition: 0.3s ease-out;
         }
         #aviation a {
-            background: rgba(0, 0, 0, 0.25) url(../images/photography/aviation.webp);
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation.webp);
             background-size: cover;
             background-position: center center;
             background-blend-mode: darken;
         }
         #landscapes a {
-            background: rgba(0, 0, 0, 0.25) url(../images/photography/aviation.webp);
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+        #weddings a {
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
             background-size: cover;
             background-position: center center;
             background-blend-mode: darken;
