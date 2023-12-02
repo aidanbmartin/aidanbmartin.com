@@ -7,14 +7,14 @@ $main-light: #F8F7F4;
 $main-dark: #343434;
 $accent: #861F41;
 $accent-dim: darken($accent, 15);
-$mobile-h1-size: 40px;
-$mobile-h2-size: 36px;
-$mobile-h3-size: 24px;
+$mobile-h1-size: 36px;
+$mobile-h2-size: 24px;
+$mobile-h3-size: 20px;
 $mobile-p-size: 12px;
 $mobile-letter-spacing: 0.10px;
 $mobile-skill-size: 72px;
 $mobile-proj-width: 100%;
-$mobile-photo-width: 100%;
+$mobile-photo-width: 256px;
 
 $breakpoints: (
     phone: 640px,
@@ -204,6 +204,10 @@ html {
             letter-spacing: multiply-px($mobile-h1-size, $mobile-letter-spacing);
         }
         h2 {
+            font-size: $mobile-h2-size;
+            letter-spacing: multiply-px($mobile-h2-size, $mobile-letter-spacing);
+        }
+        h3 {
             font-size: $mobile-h3-size;
             letter-spacing: multiply-px($mobile-h3-size, $mobile-letter-spacing);
         }
@@ -443,17 +447,20 @@ html {
         //height: 800px;
         justify-content: flex-start;
         .genre {
-            background-color: $main-light;
-            background-image: url(../images/photography/aviation.webp);
-            background-size: cover;
-            background-position: center center;
             margin: 16px;
             width: $mobile-photo-width;
-            aspect-ratio: 3 / 2;
+            aspect-ratio: 16 / 9;
             transition: 0.1s ease-out;
             position: relative;
             border-radius: 10px;
             a {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 text-decoration: none;
                 color: $main-light;
             }
@@ -479,6 +486,18 @@ html {
         .genre:hover {
             transform: translate(0, -5px);
             transition: 0.3s ease-out;
+        }
+        #aviation a {
+            background: rgba(0, 0, 0, 0.25) url(../images/photography/aviation.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+        #landscapes a {
+            background: rgba(0, 0, 0, 0.25) url(../images/photography/aviation.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
         }
     }
 }
