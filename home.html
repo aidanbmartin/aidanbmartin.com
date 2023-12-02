@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="mobile-menu">
+        <div class="menu">
             <input type="checkbox" id="menu">
             <label for="menu"></label>
             <nav class="topnav">
@@ -25,26 +25,33 @@
     <main>
         <section class="page" id="landing-page">
             <div class="profile">
-                <img id="profile-photo" src="images/profile-photo.webp" alt="Studio headshot of Aidan Martin.">
-                <h1 id="profile-header">Aidan Martin</h1>
-                <p>Computer Science Student & Photographer</p>
-                <div class="social-links">
-                    <a href="https://github.com/aidanbmartin/"><img src="images/social-icons/github-svgrepo-com.svg" alt=""></a>
-                    <a href="https://www.linkedin.com/in/aidanbmartin/"><img src="images/social-icons/linkedin-svgrepo-com.svg" alt=""></a>
+                <div id="profile-header">
+                    <img id="profile-photo" src="images/profile-photo.webp" alt="Studio headshot of Aidan Martin.">
+                    <div id="profile-text">
+                        <h1>Aidan Martin</h1>
+                        <p>Computer Science Student & Photographer</p>
+                        <div class="social-links">
+                            <a href="https://github.com/aidanbmartin/"><img src="images/social-icons/github-svgrepo-com.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/in/aidanbmartin/"><img src="images/social-icons/linkedin-svgrepo-com.svg" alt=""></a>
+                        </div>
+                    </div>
                 </div>
+
                 <p>
                     Hi! I'm an aspiring software developer and photographer-for-hire based in Williamsburg & Blacksburg, VA. 
                 </p>
             </div>
             <div class="contact">
-                <h2 id="contact-header">Contact</h2>
-                <p>Phone: (804) 887-9760</p>
-                <p>Email: contact@aidanbmartin.com</p>
+                <div id="contact-body">
+                    <h2 id="contact-header">Contact</h2>
+                    <p>Phone: (804) 887-9760</p>
+                    <p>Email: contact@aidanbmartin.com</p>
+                </div>
+                <a href="files/Resume_Aidan-B-Martin_11-13-23.pdf" class="btn" id="resume-btn" download="Resume-Aidan-B-Martin">
+                    <p>Download Resume</p>
+                    <img src="images/icons/download.svg" alt="">
+                </a>
             </div>
-            <a href="files/Resume_Aidan-B-Martin_11-13-23.pdf" class="btn" download="Resume-Aidan-B-Martin">
-                <p>Download Resume</p>
-                <img src="images/icons/download.svg" alt="">
-            </a>
             <a class="read-more" href="#skills-header">
                 <p>Read More</p>
                 <img src="images/icons/chevron-down.svg" alt="" class="icon">
