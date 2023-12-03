@@ -28,6 +28,16 @@ $tablet-skill-size: 80px;
 $tablet-proj-width: 40%;
 $tablet-photo-width: 40%;
 
+$tablet-page-width: 85%;
+$tablet-h1-size: 36px;
+$tablet-h2-size: 24px;
+$tablet-h3-size: 20px;
+$tablet-p-size: 12px;
+$tablet-letter-spacing: 0.10px;
+$tablet-skill-size: 80px;
+$tablet-proj-width: 40%;
+$tablet-photo-width: 40%;
+
 $breakpoints: (
     phone: 640px,
     tablet: 768px,
@@ -527,9 +537,402 @@ html {
 // Tablet
 @include media (">= tablet", "< desktop") {
     .menu {
+        position: fixed;
+        margin: 20px 20px;
+        width: 75%;
+        label {
+            display: block;
+            cursor: pointer;
+            //z-index: 2;
+            background: url(../images/icons/menu.svg) no-repeat center center;
+            background-color: $main-light;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            transition: 0.1s ease-out;
+            border-radius: 20px;
+            box-shadow: var(--shadow-elevation-low);
+        }
+        .topnav {
+            display: none;
+            position: absolute;
+            padding: 10px 40px 10px 20px;
+            margin-top: 10px;
+            transition: opacity 0.1s ease-out;
+            width: 100%;
+            //opacity: 0;
+            //height: -10;
+            //overflow: hidden;
+            background-color: $main-light;
+            border-radius: 10px;
+            appearance: none;
+            z-index: 0;
+            box-shadow: var(--shadow-elevation-medium);
+            a {
+                display: block;
+                text-decoration: none;
+                color: $main-dark;
+                padding: 10px;
+                font-size: $mobile-p-size;
+                letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
+                line-height: 2;
+                transition: 0.1s ease-out;
+            }
+            a:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    input#menu {
+        display: none;
+    }
+    input:checked ~ label {
+        background-image: url(../images/icons/close-svgrepo-com.svg);
+    }
+    input:checked ~ .topnav {
+        display: block;
+    }
+
+    .page {
+        width: $tablet-page-width;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        text-align: center;
+        h1 {
+            font-size: $tablet-h1-size;
+            letter-spacing: multiply-px($tablet-h1-size, $letter-spacing);
+        }
+        h2 {
+            font-size: $tablet-h2-size;
+            letter-spacing: multiply-px($tablet-h2-size, $letter-spacing);
+        }
+        h3 {
+            font-size: $tablet-h3-size;
+            letter-spacing: multiply-px($tablet-h3-size, $letter-spacing);
+        }
+        p {
+            font-size: $tablet-p-size;
+            letter-spacing: multiply-px($tablet-p-size, $letter-spacing);
+            line-height: 2;
+        }
+    }
+    #landing-page {
+        margin-top: 40px;
+        justify-content: space-around;
+        height: 800px;
+        .profile {
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 75%;
+            #profile-header {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin-bottom: 40px;
+            }
+            #profile-photo {
+                margin-bottom: 10px;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                box-shadow: var(--shadow-elevation-medium);
+            }
+            #profile-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-links {
+                display: flex;
+                width: 100px;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                a {
+                    display: inline-block;
+                    //position: relative;
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        padding: 10px;
+                        transition: 0.1s ease-out;
+                    }
+                }
+                a:hover {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        padding: 5px;
+                    }
+                }
+            } 
+        }
+        .contact {
+            width: 65%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            text-align: left;
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+        .read-more {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 50px;
+            text-decoration: none;
+            transition: 0.2s ease-out;
+            color: $main-dark;
+        }
+        .read-more:hover {
+            margin-bottom: 40px;
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+    #skill-page {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        #xcode-icon {
+            padding-left: 3px;
+        }
+        .skill {
+            background-color: $main-light;
+            margin: 16px;
+            height: $tablet-skill-size;
+            width: $tablet-skill-size;
+            transition: 0.1s ease-out;
+            position: relative;
+            border-radius: 10px;
+            //z-index: 1;
+            img {
+                margin: 12px;
+                width: $tablet-skill-size - 24;
+                height: $tablet-skill-size - 24;
+            }
+            p {
+                margin: 2px;
+                font-size: 10px;
+            }
+        }
+        .skill::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .skill:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .skill:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
+        }
+
+    }
+    #project-page {
+        margin-bottom: 40px;
+        justify-content: flex-start;
+        .project {
+            position: relative;
+            //overflow: hidden;
+            background-color: $main-light;
+            margin: 16px;
+            //height: 256px;
+            width: $tablet-proj-width;
+            border-radius: 10px;
+            transition: 0.1s ease-out;
+            a {
+                text-decoration: none;
+                color: $main-dark;
+            }
+            .project-thumbnail {
+                object-fit: cover;
+                padding: 0px;
+                margin: 0px;
+                height: 50%;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;;
+            }
+            .project-desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                align-self: flex-start;
+                padding: 16px;
+                text-align: left;
+                h3 {
+                    padding: 0px;
+                    margin: 0px;
+                    align-self: flex-start;
+                }
+                p {
+                    margin-top: 16px;
+                    align-self: flex-start;
+                }
+                .view-github {
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    align-self: flex-end;
+                    transition: 0.1s ease-out;
+                    p {
+                        margin-top: 0px;
+                        margin-right: 8px;
+                    }
+                }
+                .languages {
+                    margin-top: 8px;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: left;
+                    gap: 8px;
+                    align-self: flex-start;
+                    p {
+                        font-size: $tablet-p-size - 2;
+                        display: block;
+                        margin-top: 0px;
+                        padding-right: 8px;
+                        padding-left: 8px;
+                        color: $main-light;
+                        border-radius: 20px;
+                    }
+                    .lang-1 {
+                        background-color: orangered;
+                    }
+                    .lang-2 {
+                        background-color: blue;
+                    }
+                    .lang-3 {
+                        background-color: plum;
+                    }
+                }
+            }
+        }
+        .project::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .project:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .project:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
+        }
+    }
+    #photography-page {
+        //height: 800px;
+        justify-content: flex-start;
+        .genre {
+            margin: 16px;
+            width: $tablet-photo-width;
+            aspect-ratio: 16 / 9;
+            transition: 0.1s ease-out;
+            position: relative;
+            border-radius: 10px;
+            a {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: $main-light;
+            }
+        }
+        .genre::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-medium);
+            pointer-events: none;
+            transition: 0.1s ease-out;
+        }
+        .genre:hover::before {
+            z-index: -1;
+            box-shadow: var(--shadow-elevation-high);
+            transition: 0.3s ease-out;
+        }
+        .genre:hover {
+            transform: translate(0, -5px);
+            transition: 0.3s ease-out;
+        }
+        #aviation a {
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+        #landscapes a {
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+        #weddings a {
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+    }
+}
+
+// Desktop
+@include media (">= desktop") {
+    .menu {
         width: 100%;
         position: fixed;
-        padding: 10px 0px 10px 0px;
+        //padding: 10px 0px 10px 0px;
         background-color: $main-light;
         box-shadow: var(--shadow-elevation-low);
         display: flex;
@@ -550,16 +953,17 @@ html {
             a {
                 display: block;
                 text-decoration: none;
+                //font-weight: bold;
                 color: $main-dark;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding: 10px;
                 font-size: $mobile-p-size;
                 letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
                 line-height: 2;
                 transition: 0.1s ease-out;
             }
             a:hover {
-                font-weight: bold;
+                color: $accent;
+                //font-weight: bold;
             }
         }
     }
@@ -899,11 +1303,6 @@ html {
             background-blend-mode: darken;
         }
     }
-}
-
-// Desktop
-@include media (">= desktop") {
-
 }
 
 
