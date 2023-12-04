@@ -28,15 +28,15 @@ $tablet-skill-size: 80px;
 $tablet-proj-width: 40%;
 $tablet-photo-width: 40%;
 
-$tablet-page-width: 85%;
-$tablet-h1-size: 36px;
-$tablet-h2-size: 24px;
-$tablet-h3-size: 20px;
-$tablet-p-size: 12px;
-$tablet-letter-spacing: 0.10px;
-$tablet-skill-size: 80px;
-$tablet-proj-width: 40%;
-$tablet-photo-width: 40%;
+$desktop-page-width: 85%;
+$desktop-h1-size: 36px;
+$desktop-h2-size: 24px;
+$desktop-h3-size: 20px;
+$desktop-p-size: 12px;
+$desktop-letter-spacing: 0.10px;
+$desktop-skill-size: 80px;
+$desktop-proj-width: 40%;
+$desktop-photo-width: 40%;
 
 $breakpoints: (
     phone: 640px,
@@ -90,6 +90,11 @@ html {
             width: 100%;
             position: absolute;
             z-index: 10;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
         }
         main {
             display: flex;
@@ -174,7 +179,7 @@ html {
             border-radius: 20px;
             box-shadow: var(--shadow-elevation-low);
         }
-        .nav {
+        .nav ul {
             display: none;
             position: absolute;
             padding: 10px 40px 10px 20px;
@@ -210,7 +215,7 @@ html {
     input:checked ~ label {
         background-image: url(../images/icons/close-svgrepo-com.svg);
     }
-    input:checked ~ .topnav {
+    input:checked ~ .nav {
         display: block;
     }
     .page {
@@ -573,7 +578,7 @@ html {
             appearance: none;
             z-index: 0;
             box-shadow: var(--shadow-elevation-medium);
-            ul li a {
+            a {
                 display: block;
                 text-decoration: none;
                 color: $main-dark;
@@ -583,7 +588,7 @@ html {
                 line-height: 2;
                 transition: 0.1s ease-out;
             }
-            ul li a:hover {
+            a:hover {
                 font-weight: bold;
             }
         }
@@ -946,58 +951,68 @@ html {
         label {
             display: none;
         }
-        .topnav {
+        nav {
             width: 85%;
-            //border-radius: 10px;
-            appearance: none;
-            z-index: 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: left;
+            align-self: left;
+            ul {
+                display: flex;
+                flex-direction: row;
+                z-index: 0;
+                align-items: center;
+                justify-self: left;
+            }
             a {
-                display: block;
+                display: flex;
                 text-decoration: none;
                 //font-weight: bold;
                 color: $main-dark;
                 padding: 10px;
-                font-size: $mobile-p-size;
-                letter-spacing: multiply-px($mobile-p-size, $letter-spacing);
+                font-size: $desktop-p-size;
+                letter-spacing: multiply-px($desktop-p-size, $letter-spacing);
                 line-height: 2;
                 transition: 0.1s ease-out;
             }
-            a:hover {
+            a:hover, label:hover {
                 color: $accent;
                 //font-weight: bold;
+                transition: 0.1s ease-out;
             }
+        }
+        input {
+            display: none;
+        }
+        .drop-label {
+            display: flex;
+        }
+        input:checked ~ .drop-content {
+            display: block;
         }
     }
     input#menu {
         display: none;
     }
-
     .page {
-        width: $tablet-page-width;
+        width: $desktop-page-width;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0px;
         text-align: center;
         h1 {
-            font-size: $tablet-h1-size;
-            letter-spacing: multiply-px($tablet-h1-size, $letter-spacing);
+            font-size: $desktop-h1-size;
+            letter-spacing: multiply-px($desktop-h1-size, $letter-spacing);
         }
         h2 {
-            font-size: $tablet-h2-size;
-            letter-spacing: multiply-px($tablet-h2-size, $letter-spacing);
+            font-size: $desktop-h2-size;
+            letter-spacing: multiply-px($desktop-h2-size, $letter-spacing);
         }
         h3 {
-            font-size: $tablet-h3-size;
-            letter-spacing: multiply-px($tablet-h3-size, $letter-spacing);
+            font-size: $desktop-h3-size;
+            letter-spacing: multiply-px($desktop-h3-size, $letter-spacing);
         }
         p {
-            font-size: $tablet-p-size;
-            letter-spacing: multiply-px($tablet-p-size, $letter-spacing);
+            font-size: $desktop-p-size;
+            letter-spacing: multiply-px($desktop-p-size, $letter-spacing);
             line-height: 2;
         }
     }
@@ -1098,16 +1113,16 @@ html {
         .skill {
             background-color: $main-light;
             margin: 16px;
-            height: $tablet-skill-size;
-            width: $tablet-skill-size;
+            height: $desktop-skill-size;
+            width: $desktop-skill-size;
             transition: 0.1s ease-out;
             position: relative;
             border-radius: 10px;
             //z-index: 1;
             img {
                 margin: 12px;
-                width: $tablet-skill-size - 24;
-                height: $tablet-skill-size - 24;
+                width: $desktop-skill-size - 24;
+                height: $desktop-skill-size - 24;
             }
             p {
                 margin: 2px;
@@ -1147,7 +1162,7 @@ html {
             background-color: $main-light;
             margin: 16px;
             //height: 256px;
-            width: $tablet-proj-width;
+            width: $desktop-proj-width;
             border-radius: 10px;
             transition: 0.1s ease-out;
             a {
@@ -1202,7 +1217,7 @@ html {
                     gap: 8px;
                     align-self: flex-start;
                     p {
-                        font-size: $tablet-p-size - 2;
+                        font-size: $desktop-p-size - 2;
                         display: block;
                         margin-top: 0px;
                         padding-right: 8px;
@@ -1250,7 +1265,7 @@ html {
         justify-content: flex-start;
         .genre {
             margin: 16px;
-            width: $tablet-photo-width;
+            width: $desktop-photo-width;
             aspect-ratio: 16 / 9;
             transition: 0.1s ease-out;
             position: relative;
