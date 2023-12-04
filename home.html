@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidan Martin | Home</title>
+    <title>Home | Aidan Martin</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,20 @@
         <div class="menu">
             <input type="checkbox" id="menu">
             <label for="menu"></label>
-            <nav class="topnav">
-                <a href="#profile-header">Home</a>
-                <a href="#skills-header">Skills & Technologies</a>
-                <a href="#projects-header">Projects</a>
-                <a href="#photography-header">Photography</a>
+            <nav>
+                <div class="nav">
+                    <ul>
+                        <li><a href="home.html#home-anchor">Home</a></li>
+                        <li><a href="home.html#skills-anchor">Skills & Technologies</a></li>
+                        <li><a href="home.html#projects-anchor">Projects</a></li>
+                        <li><a href="home.html#photography-anchor">Photography</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
     <main>
+        <div class="anchor-target" id="home-anchor"></div>
         <section class="page" id="landing-page">
             <div class="profile">
                 <div id="profile-header">
@@ -57,6 +62,7 @@
                 <img src="images/icons/chevron-down.svg" alt="" class="icon">
             </a>
         </section>
+        <div class="anchor-target" id="skills-anchor"></div>
         <section class="page" id="skill-page">
             <h2 id="skills-header">Skills & Technologies</h2>
             <div class="grid">
@@ -158,6 +164,7 @@
                 </div>
             </div>
         </section>
+        <div class="anchor-target" id="projects-anchor"></div>
         <section class="page" id="project-page">
             <h2 id="projects-header">Projects</h2>
             <div class="grid">
@@ -180,21 +187,22 @@
                 </div>
             </div>
         </section>
+        <div class="anchor-target" id="photography-anchor"></div>
         <section class="page" id="photography-page">
             <h2 id="photography-header">Photography</h2>
             <div class="grid">
                 <div class="genre" id="aviation">
-                    <a href="">
+                    <a href="aviation.html">
                         <h2>Aviation</h2>
                     </a>
                 </div>
                 <div class="genre" id="landscapes">
-                    <a href="">
+                    <a href="landscapes.html">
                         <h2>Landscapes</h2>
                     </a>
                 </div>
                 <div class="genre" id="weddings">
-                    <a href="">
+                    <a href="weddings.html">
                         <h2>Weddings</h2>
                     </a>
                 </div>

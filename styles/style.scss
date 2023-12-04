@@ -138,6 +138,11 @@ html {
                 width: 24px;
                 height: 24px;
             }
+            .anchor-target {
+                display: block;
+                position: relative;
+                top: -85px;
+            }
         }
         footer {
             display: flex;
@@ -169,7 +174,7 @@ html {
             border-radius: 20px;
             box-shadow: var(--shadow-elevation-low);
         }
-        .topnav {
+        .nav {
             display: none;
             position: absolute;
             padding: 10px 40px 10px 20px;
@@ -553,7 +558,7 @@ html {
             border-radius: 20px;
             box-shadow: var(--shadow-elevation-low);
         }
-        .topnav {
+        .nav {
             display: none;
             position: absolute;
             padding: 10px 40px 10px 20px;
@@ -568,7 +573,7 @@ html {
             appearance: none;
             z-index: 0;
             box-shadow: var(--shadow-elevation-medium);
-            a {
+            ul li a {
                 display: block;
                 text-decoration: none;
                 color: $main-dark;
@@ -578,7 +583,7 @@ html {
                 line-height: 2;
                 transition: 0.1s ease-out;
             }
-            a:hover {
+            ul li a:hover {
                 font-weight: bold;
             }
         }
