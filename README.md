@@ -14,5 +14,5 @@ My first goal in the development process was to initialize my files and file str
 
 Current status: Website currently displays mobile design regardless of screen size, will implement designs for larger sizes after completong mobile design. After completing styling for tablet and desktop screen sizes, I will simplify the CSS to remove instances of repeating code.
 
-12/28/23 Update: Resuming development after taking a long break due to finals, travel, and holidays.
+12/28/23 Update: Resuming development after taking a long break due to finals, travel, and holidays. 
 
