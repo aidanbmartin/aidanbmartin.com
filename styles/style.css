@@ -886,8 +886,8 @@ html body footer p {
     text-decoration: none;
     color: #343434;
     padding: 10px;
-    font-size: 12px;
-    letter-spacing: 1.2px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
     line-height: 2;
     transition: 0.1s ease-out;
   }
@@ -916,20 +916,20 @@ html body footer p {
     text-align: center;
   }
   .page h1 {
-    font-size: 36px;
-    letter-spacing: 3.6px;
+    font-size: 40px;
+    letter-spacing: 4px;
   }
   .page h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .page h3 {
     font-size: 24px;
     letter-spacing: 2.4px;
   }
-  .page h3 {
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
   .page p {
-    font-size: 12px;
-    letter-spacing: 1.2px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
     line-height: 2;
   }
   #landing-page {
@@ -1131,7 +1131,7 @@ html body footer p {
     align-self: flex-start;
   }
   #project-page .project .project-desc .languages p {
-    font-size: 10px;
+    font-size: 14px;
     display: block;
     margin-top: 0px;
     padding-right: 8px;
@@ -1215,19 +1215,25 @@ html body footer p {
     transition: 0.3s ease-out;
   }
   #photography-page #aviation a {
-    background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation.webp);
+    background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation-2.webp);
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;
   }
   #photography-page #landscapes a {
-    background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes.webp);
+    background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes-2.webp);
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;
   }
   #photography-page #weddings a {
     background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: darken;
+  }
+  #photography-page #wildlife a {
+    background: rgba(0, 0, 0, 0.2) url(../images/photography/wildlife.webp);
     background-size: cover;
     background-position: center center;
     background-blend-mode: darken;

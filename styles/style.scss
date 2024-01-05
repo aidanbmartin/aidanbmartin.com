@@ -29,10 +29,10 @@ $tablet-proj-width: 40%;
 $tablet-photo-width: 40%;
 
 $desktop-page-width: 85%;
-$desktop-h1-size: 36px;
-$desktop-h2-size: 24px;
-$desktop-h3-size: 20px;
-$desktop-p-size: 12px;
+$desktop-h1-size: 40px;
+$desktop-h2-size: 30px;
+$desktop-h3-size: 24px;
+$desktop-p-size: 16px;
 $desktop-letter-spacing: 0.10px;
 $desktop-skill-size: 80px;
 $desktop-proj-width: 40%;
@@ -1305,19 +1305,25 @@ html {
             transition: 0.3s ease-out;
         }
         #aviation a {
-            background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation.webp);
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation-2.webp);
             background-size: cover;
             background-position: center center;
             background-blend-mode: darken;
         }
         #landscapes a {
-            background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes.webp);
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes-2.webp);
             background-size: cover;
             background-position: center center;
             background-blend-mode: darken;
         }
         #weddings a {
             background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
+            background-size: cover;
+            background-position: center center;
+            background-blend-mode: darken;
+        }
+        #wildlife a {
+            background: rgba(0, 0, 0, 0.2) url(../images/photography/wildlife.webp);
             background-size: cover;
             background-position: center center;
             background-blend-mode: darken;
