@@ -102,7 +102,6 @@ html {
             align-items: center;
             h1, h2, h3, p {
                 margin: 0px;
-                
             }
             .btn {
                 display: flex;
@@ -153,6 +152,8 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
             p {
                 font-size: 10px;
             }
@@ -957,9 +958,38 @@ html {
             ul {
                 display: flex;
                 flex-direction: row;
-                z-index: 0;
                 align-items: center;
                 justify-self: left;
+                #photo-drop-content {
+                    opacity: 0;
+                    position: absolute;
+                    display: block;
+                    transition: opacity 0.2s ease-out;
+                    background-color: $main-light;
+                    border-radius: 0px 0px 10px 10px;
+                    box-shadow: var(--shadow-elevation-low);
+                }
+                #photo-drop-label {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                #photo-drop-icon {
+                    transition: 0.2s ease-out;
+                    width: $desktop-p-size;
+                    height: $desktop-p-size;
+                    margin-left: 5px;
+                    background-image: url("../images/icons/chevron-right.svg");
+                    background-size: contain;
+                }
+                #photo-drop:hover #photo-drop-content {
+                    opacity: 1;
+                    pointer-events: auto;
+                    transition: opacity 0.2s ease-out;
+                }
+                #photo-drop:hover #photo-drop-icon {
+                    background-image: url("../images/icons/chevron-down.svg");
+                }
             }
             a {
                 display: flex;
@@ -967,25 +997,17 @@ html {
                 //font-weight: bold;
                 color: $main-dark;
                 padding: 10px;
+                padding-right: 30px;
                 font-size: $desktop-p-size;
                 letter-spacing: multiply-px($desktop-p-size, $letter-spacing);
                 line-height: 2;
-                transition: 0.1s ease-out;
+                transition: 0.2s ease-out;
             }
             a:hover, label:hover {
                 color: $accent;
                 //font-weight: bold;
-                transition: 0.1s ease-out;
+                transition: 0.2s ease-out;
             }
-        }
-        input {
-            display: none;
-        }
-        .drop-label {
-            display: flex;
-        }
-        input:checked ~ .drop-content {
-            display: block;
         }
     }
     input#menu {
@@ -1017,7 +1039,7 @@ html {
         }
     }
     #landing-page {
-        margin-top: 40px;
+        margin-top: 120px;
         justify-content: space-around;
         height: 800px;
         .profile {
