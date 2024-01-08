@@ -154,6 +154,7 @@ html body #landing-page .profile #profile-header {
   margin-bottom: 40px;
 }
 html body #landing-page .profile #profile-photo {
+  margin-bottom: 24px;
   border-radius: 50%;
   width: 200px;
   height: 200px;
