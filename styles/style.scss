@@ -748,11 +748,59 @@ html {
 // Med - Lg Desktop
 @include media (">=desktopM", "<desktopL") {
     @include desktopNav();
+    #landing-page {
+        .profile {
+            width: 75%;
+            #profile-header {
+                flex-direction: row;
+            }
+        }
+        .contact {
+            width: 65%;
+            flex-direction: row;
+        }
+    }
+    #project-page {
+        .project {
+            width: 40%;
+        }
+    }
+    #photography-page {
+        .genre {
+            width: 40%;
+        }
+    }
 }
 
 // Lg Desktop +
 @include media (">=desktopL") {
     @include desktopNav();
+    #landing-page {
+        width: 50%;
+        .profile {
+            width: 50%;
+            #profile-header {
+                flex-direction: row;
+            }
+        }
+        .contact {
+            width: 65%;
+            flex-direction: row;
+        }
+    }
+    #project-page {
+        .project {
+            width: 40%;
+        }
+    }
+    #photography-page {
+        .genre {
+            width: 40%;
+        }
+    }
+    #skill-page {
+        width: 50%
+    }
 }
 
 

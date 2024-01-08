@@ -877,6 +877,22 @@ html body #photography-page #wildlife a {
   input#menu {
     display: none;
   }
+  #landing-page .profile {
+    width: 75%;
+  }
+  #landing-page .profile #profile-header {
+    flex-direction: row;
+  }
+  #landing-page .contact {
+    width: 65%;
+    flex-direction: row;
+  }
+  #project-page .project {
+    width: 40%;
+  }
+  #photography-page .genre {
+    width: 40%;
+  }
 }
 @media (min-width: 1800px) {
   .menu {
@@ -950,5 +966,27 @@ html body #photography-page #wildlife a {
   }
   input#menu {
     display: none;
+  }
+  #landing-page {
+    width: 50%;
+  }
+  #landing-page .profile {
+    width: 50%;
+  }
+  #landing-page .profile #profile-header {
+    flex-direction: row;
+  }
+  #landing-page .contact {
+    width: 65%;
+    flex-direction: row;
+  }
+  #project-page .project {
+    width: 40%;
+  }
+  #photography-page .genre {
+    width: 40%;
+  }
+  #skill-page {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
