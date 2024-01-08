@@ -639,6 +639,7 @@ html {
 @include media (">= min", "< phone") {
     @include mobileNav();
     #landing-page {
+        width: 100%;
         .profile {
             width: 100%;
             #profile-header {
@@ -660,12 +661,19 @@ html {
             width: 100%;
         }
     }
+    #skill-page {
+        #skills-header {
+            width: 85%;
+        }
+        width: 100%
+    }
 }
 
 // Mobile - Tablet
 @include media (">=phone", "<tablet") {
     @include mobileNav();
     #landing-page {
+        width: 100%;
         .profile {
             width: 100%;
             #profile-header {

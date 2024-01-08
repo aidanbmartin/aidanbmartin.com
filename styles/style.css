@@ -513,6 +513,9 @@ html body #photography-page #wildlife a {
     opacity: 100;
     transition: opacity 0.2s ease-out;
   }
+  #landing-page {
+    width: 100%;
+  }
   #landing-page .profile {
     width: 100%;
   }
@@ -528,6 +531,12 @@ html body #photography-page #wildlife a {
   }
   #photography-page .genre {
     width: 100%;
+  }
+  #skill-page {
+    width: 100%;
+  }
+  #skill-page #skills-header {
+    width: 85%;
   }
 }
 @media (min-width: 666px) and (max-width: 767px) {
@@ -605,6 +614,9 @@ html body #photography-page #wildlife a {
     visibility: visible;
     opacity: 100;
     transition: opacity 0.2s ease-out;
+  }
+  #landing-page {
+    width: 100%;
   }
   #landing-page .profile {
     width: 100%;
