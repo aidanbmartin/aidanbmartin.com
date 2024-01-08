@@ -34,10 +34,13 @@
 ///  $breakpoints: ('phone': 320px);
 ///
 $breakpoints: (
-  'phone': 320px,
-  'tablet': 768px,
-  'desktop': 1024px,
-) !default;
+    min: 320px,
+    phone: 666px,
+    tablet: 768px,
+    desktopS: 1024px,
+    desktopM: 1200px,
+    desktopL: 1800px,
+);
 
 ///
 /// Creates a list of static expressions or media types
