@@ -64,6 +64,7 @@ html body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 html body main h1, html body main h2, html body main h3, html body main p {
   margin: 0px;
@@ -127,13 +128,15 @@ html body .page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 html body #landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 120px;
-  justify-content: space-around;
-  height: 800px;
 }
 html body #landing-page .profile {
   margin: 0px;
@@ -187,33 +190,30 @@ html body #landing-page .profile .social-links a:hover img, html body #landing-p
 }
 html body #landing-page .contact {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   text-align: left;
+  margin-top: 40px;
 }
 html body #landing-page .contact h2 {
   margin-bottom: 10px;
+}
+html body #landing-page .contact #resume-btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 html body #landing-page .read-more {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-top: 40px;
   text-decoration: none;
   transition: 0.2s ease-out;
   color: #343434;
 }
-html body #landing-page .read-more:hover, html body #landing-page .read-more:focus-visible {
-  margin-bottom: 40px;
-}
-html body #landing-page .read-more:hover img, html body #landing-page .read-more:focus-visible img {
-  margin-top: 10px;
-}
 html body #skill-page {
   justify-content: flex-start;
-  margin-bottom: 40px;
 }
 html body #skill-page #xcode-icon {
   padding-left: 3px;
@@ -263,7 +263,6 @@ html body #skill-page .skill:hover {
   transition: 0.3s ease-out;
 }
 html body #project-page {
-  margin-bottom: 40px;
   justify-content: flex-start;
 }
 html body #project-page .project {
@@ -505,6 +504,22 @@ html body #photography-page #wildlife a {
     opacity: 100;
     transition: opacity 0.2s ease-out;
   }
+  #landing-page .profile {
+    width: 100%;
+  }
+  #landing-page .profile #profile-header {
+    flex-direction: column;
+  }
+  #landing-page .contact {
+    width: 100%;
+    flex-direction: column;
+  }
+  #project-page .project {
+    width: 100%;
+  }
+  #photography-page .genre {
+    width: 100%;
+  }
 }
 @media (min-width: 666px) and (max-width: 767px) {
   .menu {
@@ -576,9 +591,6 @@ html body #photography-page #wildlife a {
     opacity: 100;
     transition: opacity 0.2s ease-out;
   }
-  #landing-page {
-    margin-bottom: 64px;
-  }
   #landing-page .profile {
     width: 100%;
   }
@@ -589,6 +601,7 @@ html body #photography-page #wildlife a {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
+    flex-direction: row;
   }
   #project-page .project {
     width: 100%;
@@ -678,6 +691,7 @@ html body #photography-page #wildlife a {
   }
   #landing-page .contact {
     width: 100%;
+    flex-direction: row;
   }
   #project-page .project {
     width: 100%;
@@ -767,6 +781,7 @@ html body #photography-page #wildlife a {
   }
   #landing-page .contact {
     width: 65%;
+    flex-direction: row;
   }
   #project-page .project {
     width: 40%;

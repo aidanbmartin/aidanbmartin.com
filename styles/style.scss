@@ -237,6 +237,7 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             h1, h2, h3, p {
                 margin: 0px;
             }
@@ -301,13 +302,17 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0px;
+            margin-top: 30px;
+            margin-bottom: 30px;
             text-align: center;
         }
         #landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-top: 120px;
-            justify-content: space-around;
-            height: 800px;
+            //justify-content: space-around;
+            //height: 800px;
             .profile {
                 margin: 0px;
                 display: flex;
@@ -366,12 +371,18 @@ html {
             .contact {
                 //width: 65%;
                 display: flex;
-                flex-direction: row;
+                //flex-direction: row;
                 align-items: center;
                 justify-content: space-around;
                 text-align: left;
+                margin-top: 40px;
+
                 h2 {
                     margin-bottom: 10px;
+                }
+                #resume-btn {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
                 }
             }
             .read-more {
@@ -379,21 +390,14 @@ html {
                 flex-direction: column;
                 align-items: center;
                 padding: 10px;
-                margin-bottom: 50px;
+                margin-top: 40px;
                 text-decoration: none;
                 transition: 0.2s ease-out;
                 color: $main-dark;
             }
-            .read-more:hover, .read-more:focus-visible {
-                margin-bottom: 40px;
-                img {
-                    margin-top: 10px;
-                }
-            }
         }
         #skill-page {
             justify-content: flex-start;
-            margin-bottom: 40px;
             #xcode-icon {
                 padding-left: 3px;
             }
@@ -445,7 +449,6 @@ html {
     
         }
         #project-page {
-            margin-bottom: 40px;
             justify-content: flex-start;
             .project {
                 position: relative;
@@ -627,13 +630,34 @@ html {
 // Min - Mobile
 @include media (">= min", "< phone") {
     @include mobileNav();
+    #landing-page {
+        .profile {
+            width: 100%;
+            #profile-header {
+                flex-direction: column;
+            }
+        }
+        .contact {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    #project-page {
+        .project {
+            width: 100%;
+        }
+    }
+    #photography-page {
+        .genre {
+            width: 100%;
+        }
+    }
 }
 
 // Mobile - Tablet
 @include media (">=phone", "<tablet") {
     @include mobileNav();
     #landing-page {
-        margin-bottom: 64px;
         .profile {
             width: 100%;
             #profile-header {
@@ -644,6 +668,7 @@ html {
             width: 100%;
             margin-top: 40px;
             margin-bottom: 40px;
+            flex-direction: row;
         }
     }
     #project-page {
@@ -670,6 +695,7 @@ html {
         }
         .contact {
             width: 100%;
+            flex-direction: row;
         }
     }
     #project-page {
@@ -696,6 +722,7 @@ html {
         }
         .contact {
             width: 65%;
+            flex-direction: row;
         }
     }
     #project-page {
