@@ -347,6 +347,9 @@ html body #project-page .project .project-desc .languages .lang-2 {
 html body #project-page .project .project-desc .languages .lang-3 {
   background-color: plum;
 }
+html body #project-page .project .project-desc .languages .lang-4 {
+  background-color: teal;
+}
 html body #project-page .project::before {
   content: "";
   position: absolute;
