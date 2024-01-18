@@ -411,7 +411,7 @@ html {
                 flex-direction: column;
                 align-content: center;
                 background-color: $main-light;
-                margin: 1.5rem;
+                margin: 2rem;
                 height: $skill-size;
                 width: $skill-size;
                 transition: 0.1s ease-out;
@@ -425,7 +425,7 @@ html {
                 }
                 p {
                     position: relative;
-                    width: $skill-size + 1rem;
+                    width: $skill-size;
                     //left: -1rem;
                     margin-top: 2px;
                     text-align: center;
@@ -610,25 +610,25 @@ html {
                 transition: 0.3s ease-out;
             }
             #aviation a {
-                background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation-2.webp);
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/aviation-2.webp);
                 background-size: cover;
                 background-position: center center;
                 background-blend-mode: darken;
             }
             #landscapes a {
-                background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes-2.webp);
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/landscapes-2.webp);
                 background-size: cover;
                 background-position: center center;
                 background-blend-mode: darken;
             }
             #weddings a {
-                background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/weddings.webp);
                 background-size: cover;
                 background-position: center center;
                 background-blend-mode: darken;
             }
             #wildlife a {
-                background: rgba(0, 0, 0, 0.2) url(../images/photography/wildlife.webp);
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/wildlife.webp);
                 background-size: cover;
                 background-position: center center;
                 background-blend-mode: darken;
@@ -636,6 +636,22 @@ html {
         }
         #photo-genre-page {
             margin-top: 120px;
+            #MAP-btn {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .image-gallery {
+                margin-top: 64px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                img {
+                    margin: 2px;
+                    height: 10rem;
+                }
+            }
         }
     }
 }

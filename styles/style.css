@@ -224,7 +224,7 @@ html body #skill-page .skill {
   flex-direction: column;
   align-content: center;
   background-color: #F8F7F4;
-  margin: 1.5rem;
+  margin: 2rem;
   height: 5rem;
   width: 5rem;
   transition: 0.1s ease-out;
@@ -238,7 +238,7 @@ html body #skill-page .skill img {
 }
 html body #skill-page .skill p {
   position: relative;
-  width: 6rem;
+  width: 5rem;
   margin-top: 2px;
   text-align: center;
   font-size: 0.875rem;
@@ -416,31 +416,47 @@ html body #photography-page .genre:hover {
   transition: 0.3s ease-out;
 }
 html body #photography-page #aviation a {
-  background: rgba(0, 0, 0, 0.2) url(../images/photography/aviation-2.webp);
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/aviation-2.webp);
   background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
 }
 html body #photography-page #landscapes a {
-  background: rgba(0, 0, 0, 0.2) url(../images/photography/landscapes-2.webp);
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/landscapes-2.webp);
   background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
 }
 html body #photography-page #weddings a {
-  background: rgba(0, 0, 0, 0.2) url(../images/photography/weddings.webp);
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/weddings.webp);
   background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
 }
 html body #photography-page #wildlife a {
-  background: rgba(0, 0, 0, 0.2) url(../images/photography/wildlife.webp);
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/wildlife.webp);
   background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
 }
 html body #photo-genre-page {
   margin-top: 120px;
+}
+html body #photo-genre-page #MAP-btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+html body #photo-genre-page .image-gallery {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+html body #photo-genre-page .image-gallery img {
+  margin: 2px;
+  height: 10rem;
 }
 
 @media (min-width: 320px) and (max-width: 665px) {
