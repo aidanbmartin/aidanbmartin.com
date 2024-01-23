@@ -637,6 +637,49 @@ html {
                 background-position: center center;
                 background-blend-mode: darken;
             }
+            #pensacola a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-1.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #tol a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-2.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #rvaflyers a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-3.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #warbirds a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-4.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #f22 a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-5.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #commercial a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-6.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #jgg a {
+                background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-7.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            
         }
         #photo-genre-page {
             margin-top: 128px;
@@ -667,8 +710,8 @@ html {
         .genre-cats {
             margin-top: 128px;
             #MAP-btn {
-                margin-top: 32px;
-                margin-bottom: 64px;
+                margin-top: 128px;
+                margin-bottom: 32px;
             }
         }
     }

@@ -442,6 +442,48 @@ html body #photography-page #wildlife a {
   background-position: center center;
   background-blend-mode: darken;
 }
+html body #photography-page #pensacola a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #tol a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #rvaflyers a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #warbirds a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #f22 a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-5.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #commercial a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-6.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #jgg a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-7.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
 html body #photo-genre-page {
   margin-top: 128px;
 }
@@ -469,8 +511,8 @@ html body .genre-cats {
   margin-top: 128px;
 }
 html body .genre-cats #MAP-btn {
-  margin-top: 32px;
-  margin-bottom: 64px;
+  margin-top: 128px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 320px) and (max-width: 665px) {
