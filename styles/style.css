@@ -444,19 +444,27 @@ html body #photo-genre-page {
 }
 html body #photo-genre-page #MAP-btn {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 128px;
 }
 html body #photo-genre-page .image-gallery {
   margin-top: 64px;
+  margin-bottom: 128px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  width: 100%;
 }
-html body #photo-genre-page .image-gallery img {
-  margin: 2px;
-  height: 10rem;
+html body #photo-genre-page .image-gallery .photo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 0;
+}
+html body #photo-genre-page .image-gallery .photo-column .photo-item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 320px) and (max-width: 665px) {
@@ -560,6 +568,9 @@ html body #photo-genre-page .image-gallery img {
   #skill-page #skills-header {
     width: 85%;
   }
+  #photo-genre-page .image-gallery {
+    flex-direction: column;
+  }
 }
 @media (min-width: 666px) and (max-width: 767px) {
   .menu {
@@ -657,6 +668,9 @@ html body #photo-genre-page .image-gallery img {
   }
   #photography-page .genre {
     width: 100%;
+  }
+  #photo-genre-page .image-gallery {
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
