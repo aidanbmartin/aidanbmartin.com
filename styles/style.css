@@ -393,6 +393,9 @@ html body #photography-page .genre a {
   text-decoration: none;
   color: #F8F7F4;
 }
+html body #photography-page .genre a h2 {
+  width: 95%;
+}
 html body #photography-page .genre::before {
   content: "";
   position: absolute;
@@ -440,11 +443,7 @@ html body #photography-page #wildlife a {
   background-blend-mode: darken;
 }
 html body #photo-genre-page {
-  margin-top: 120px;
-}
-html body #photo-genre-page #MAP-btn {
-  margin-top: 40px;
-  margin-bottom: 128px;
+  margin-top: 128px;
 }
 html body #photo-genre-page .image-gallery {
   margin-top: 64px;
@@ -465,6 +464,13 @@ html body #photo-genre-page .image-gallery .photo-column .photo-item img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+html body .genre-cats {
+  margin-top: 128px;
+}
+html body .genre-cats #MAP-btn {
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
 
 @media (min-width: 320px) and (max-width: 665px) {
