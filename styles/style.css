@@ -484,6 +484,12 @@ html body #photography-page #jgg a {
   background-position: center center;
   background-blend-mode: darken;
 }
+html body #photography-page #emilymichael a {
+  background: rgba(0, 0, 0, 0.2) url(../photography/weddings/thumbnails/michael-emily-thumb.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
 html body #photo-genre-page {
   margin-top: 128px;
 }
