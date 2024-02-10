@@ -507,6 +507,9 @@ html body #photo-genre-page .image-gallery .photo-column .photo-item img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+html body #blog {
+  margin-top: 120px;
+}
 html body .genre-cats {
   margin-top: 128px;
 }
