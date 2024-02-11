@@ -1084,10 +1084,21 @@ html body .genre-cats #MAP-btn {
     flex-direction: row;
   }
   #project-page .project {
-    width: 40%;
+    width: 20%;
+  }
+  #photography-page {
+    -webkit-overflow-scrolling: touch;
   }
   #photography-page .genre {
-    width: 40%;
+    width: 30%;
+  }
+  #photography-page .grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  #photography-page .grid .genre {
+    flex: 0 0 auto;
   }
   #skill-page {
     width: 50%;

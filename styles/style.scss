@@ -897,13 +897,22 @@ html {
     }
     #project-page {
         .project {
-            width: 40%;
+            width: 20%;
         }
     }
     #photography-page {
         .genre {
-            width: 40%;
+            width: 30%;
         }
+        .grid {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .genre {
+                flex: 0 0 auto;
+            }
+        }
+        -webkit-overflow-scrolling: touch;
     }
     #skill-page {
         width: 50%
