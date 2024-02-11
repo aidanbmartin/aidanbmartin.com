@@ -513,8 +513,11 @@ html body #blog {
 html body .genre-cats {
   margin-top: 128px;
 }
+html body .genre-cats #photography-header {
+  margin-bottom: 64px;
+}
 html body .genre-cats #MAP-btn {
-  margin-top: 128px;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
