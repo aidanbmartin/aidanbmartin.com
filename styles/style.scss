@@ -637,6 +637,18 @@ html {
                 background-position: center center;
                 background-blend-mode: darken;
             }
+            #virginiatech a {
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/vt-thumb.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
+            #urban a {
+                background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/urban-thumb.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-blend-mode: darken;
+            }
             #pensacola a {
                 background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-1.jpg);
                 background-size: cover;

@@ -442,6 +442,18 @@ html body #photography-page #wildlife a {
   background-position: center center;
   background-blend-mode: darken;
 }
+html body #photography-page #virginiatech a {
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/vt-thumb.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
+html body #photography-page #urban a {
+  background: rgba(0, 0, 0, 0.2) url(../images/photo-thumbnails/urban-thumb.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
 html body #photography-page #pensacola a {
   background: rgba(0, 0, 0, 0.2) url(../photography/aviation/thumbnails/thumb-1.jpg);
   background-size: cover;
