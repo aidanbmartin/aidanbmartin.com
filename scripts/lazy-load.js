@@ -1,3 +1,6 @@
+// lazy-load.js
+// Credit to ImageKit.io docs
+
 document.addEventListener("DOMContentLoaded", function() {
     var lazyLoadImages;
 
