@@ -350,6 +350,10 @@ html body #project-page .project .project-desc .languages .lang-3 {
 html body #project-page .project .project-desc .languages .lang-4 {
   background-color: teal;
 }
+html body #project-page .project .project-desc .languages .lang-5 {
+  background-color: #f7df1e;
+  color: black;
+}
 html body #project-page .project::before {
   content: "";
   position: absolute;
