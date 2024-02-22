@@ -193,7 +193,6 @@ html body #landing-page .contact {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-align: left;
   margin-top: 40px;
 }
 html body #landing-page .contact h2 {
@@ -631,6 +630,7 @@ html body .genre-cats #MAP-btn {
   #landing-page .contact {
     width: 100%;
     flex-direction: column;
+    text-align: center;
   }
   #project-page .project {
     width: 100%;
@@ -738,6 +738,7 @@ html body .genre-cats #MAP-btn {
     margin-top: 40px;
     margin-bottom: 40px;
     flex-direction: row;
+    text-align: left;
   }
   #project-page .project {
     width: 100%;
@@ -831,6 +832,7 @@ html body .genre-cats #MAP-btn {
   #landing-page .contact {
     width: 100%;
     flex-direction: row;
+    text-align: left;
   }
   #project-page .project {
     width: 100%;
@@ -921,6 +923,7 @@ html body .genre-cats #MAP-btn {
   #landing-page .contact {
     width: 65%;
     flex-direction: row;
+    text-align: left;
   }
   #project-page .project {
     width: 40%;
@@ -1011,6 +1014,7 @@ html body .genre-cats #MAP-btn {
   #landing-page .contact {
     width: 65%;
     flex-direction: row;
+    text-align: left;
   }
   #project-page .project {
     width: 40%;
@@ -1104,6 +1108,7 @@ html body .genre-cats #MAP-btn {
   #landing-page .contact {
     width: 65%;
     flex-direction: row;
+    text-align: left;
   }
   #project-page .project {
     width: 20%;
