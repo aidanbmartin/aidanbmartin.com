@@ -500,6 +500,12 @@ html body #photography-page #emilymichael a {
   background-position: center center;
   background-blend-mode: darken;
 }
+html body #photography-page #sports a {
+  background: rgba(0, 0, 0, 0.2) url(https://ik.imagekit.io/abm/main/photo-thumbnails/sports-thumb);
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: darken;
+}
 html body #photo-genre-page {
   margin-top: 128px;
 }
