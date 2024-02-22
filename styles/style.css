@@ -1103,11 +1103,10 @@ html body .genre-cats #MAP-btn {
     width: 20%;
   }
   #photography-page .genre {
-    width: 50rem;
+    width: 40rem;
   }
   #photography-page .grid {
     display: flex;
-    flex-wrap: nowrap;
   }
   #skill-page {
     width: 50%;
