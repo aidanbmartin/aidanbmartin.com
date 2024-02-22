@@ -13,4 +13,7 @@ Images hosted with ImageKit.io
 Shadow pallete generated from Josh Comeau's Shadow Pallete Generator 
 https://www.joshwcomeau.com/shadow-palette/
 
+Utilizes the include-media tool by Eduardo Boucas and Kitty Giraudel
+https://eduardoboucas.github.io/include-media
+
 Languages: HTML, CSS, SCSS, Javascript
