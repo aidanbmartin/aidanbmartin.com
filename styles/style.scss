@@ -315,7 +315,7 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 120px;
+            //padding-top: 120px;
             background-color: $main-dark;
             color: $main-light;
             //justify-content: space-around;
@@ -853,6 +853,7 @@ html {
 @include media (">=tablet", "<desktopS") {
     @include desktopNav();
     #landing-page {
+        padding-top: 120px;
         .profile {
             width: 85%;
             #profile-header {
@@ -881,6 +882,7 @@ html {
 @include media (">=desktopS", "<desktopM") {
     @include desktopNav();
     #landing-page {
+        padding-top: 120px;
         .profile {
             width: 65%;
             #profile-header {
@@ -909,6 +911,7 @@ html {
 @include media (">=desktopM", "<desktopL") {
     @include desktopNav();
     #landing-page {
+        padding-top: 120px;
         .profile {
             width: 50%;
             #profile-header {
@@ -937,6 +940,7 @@ html {
 @include media (">=desktopL") {
     @include desktopNav();
     #landing-page {
+        padding-top: 120px;
         width: 50%;
         .profile {
             width: 30%;

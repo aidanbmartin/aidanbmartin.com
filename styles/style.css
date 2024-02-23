@@ -135,7 +135,6 @@ html body #landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
   background-color: #343434;
   color: #F8F7F4;
 }
@@ -848,6 +847,9 @@ html body .genre-cats #MAP-btn {
   input#menu {
     display: none;
   }
+  #landing-page {
+    padding-top: 120px;
+  }
   #landing-page .profile {
     width: 85%;
   }
@@ -939,6 +941,9 @@ html body .genre-cats #MAP-btn {
   input#menu {
     display: none;
   }
+  #landing-page {
+    padding-top: 120px;
+  }
   #landing-page .profile {
     width: 65%;
   }
@@ -1029,6 +1034,9 @@ html body .genre-cats #MAP-btn {
   }
   input#menu {
     display: none;
+  }
+  #landing-page {
+    padding-top: 120px;
   }
   #landing-page .profile {
     width: 50%;
@@ -1122,6 +1130,7 @@ html body .genre-cats #MAP-btn {
     display: none;
   }
   #landing-page {
+    padding-top: 120px;
     width: 50%;
   }
   #landing-page .profile {
