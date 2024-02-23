@@ -729,6 +729,25 @@ html {
                 }
             }
         }
+        #clients-page {
+            .clients-list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 64px;
+                align-items: center;
+                justify-content: space-between;
+                justify-content: center;
+                width: 100%;
+                a {
+                    cursor: pointer;
+                    padding: 20px;
+                    img {
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
         #blog {
             margin-top: 120px;
         }
