@@ -83,7 +83,6 @@ html body main .btn {
   border: none;
   border-radius: 10px;
   transition: 0.2s ease-out;
-  box-shadow: var(--shadow-elevation-low);
   text-decoration: none;
 }
 html body main .btn img {
@@ -124,19 +123,21 @@ html body footer p {
   font-size: 10px;
 }
 html body .page {
-  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 html body #landing-page {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
+  padding-top: 120px;
+  background-color: #343434;
+  color: #F8F7F4;
 }
 html body #landing-page .profile {
   margin: 0px;
@@ -144,7 +145,6 @@ html body #landing-page .profile {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
 }
 html body #landing-page .profile #profile-header {
   width: 100%;
@@ -158,7 +158,6 @@ html body #landing-page .profile #profile-photo {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  box-shadow: var(--shadow-elevation-medium);
 }
 html body #landing-page .profile #profile-text {
   display: flex;
@@ -210,9 +209,10 @@ html body #landing-page .read-more {
   margin-top: 40px;
   text-decoration: none;
   transition: 0.2s ease-out;
-  color: #343434;
+  color: #F8F7F4;
 }
 html body #skill-page {
+  width: 85%;
   justify-content: flex-start;
 }
 html body #skill-page #xcode-icon {
@@ -265,6 +265,7 @@ html body #skill-page .skill:hover {
   transition: 0.3s ease-out;
 }
 html body #project-page {
+  width: 85%;
   justify-content: flex-start;
 }
 html body #project-page .project {
@@ -376,6 +377,7 @@ html body #project-page .project:hover {
   transition: 0.3s ease-out;
 }
 html body #photography-page {
+  width: 85%;
   justify-content: flex-start;
 }
 html body #photography-page .genre {
@@ -506,6 +508,7 @@ html body #photography-page #sports a {
   background-blend-mode: darken;
 }
 html body #photo-genre-page {
+  width: 85%;
   margin-top: 128px;
 }
 html body #photo-genre-page .image-gallery {
@@ -528,6 +531,9 @@ html body #photo-genre-page .image-gallery .photo-column .photo-item img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+html body #clients-page {
+  width: 85%;
+}
 html body #clients-page .clients-list {
   display: flex;
   flex-direction: row;
@@ -546,6 +552,7 @@ html body #clients-page .clients-list a img {
   max-width: 250px;
 }
 html body #blog {
+  width: 85%;
   margin-top: 120px;
 }
 html body .genre-cats {
@@ -639,7 +646,7 @@ html body .genre-cats #MAP-btn {
     width: 100%;
   }
   #landing-page .profile {
-    width: 100%;
+    width: 85%;
   }
   #landing-page .profile #profile-header {
     flex-direction: column;
@@ -745,7 +752,7 @@ html body .genre-cats #MAP-btn {
     width: 100%;
   }
   #landing-page .profile {
-    width: 100%;
+    width: 85%;
   }
   #landing-page .profile #profile-header {
     flex-direction: column;
@@ -841,7 +848,7 @@ html body .genre-cats #MAP-btn {
     display: none;
   }
   #landing-page .profile {
-    width: 100%;
+    width: 85%;
   }
   #landing-page .profile #profile-header {
     flex-direction: row;
@@ -932,7 +939,7 @@ html body .genre-cats #MAP-btn {
     display: none;
   }
   #landing-page .profile {
-    width: 75%;
+    width: 65%;
   }
   #landing-page .profile #profile-header {
     flex-direction: row;
@@ -1023,7 +1030,7 @@ html body .genre-cats #MAP-btn {
     display: none;
   }
   #landing-page .profile {
-    width: 75%;
+    width: 50%;
   }
   #landing-page .profile #profile-header {
     flex-direction: row;
@@ -1117,13 +1124,13 @@ html body .genre-cats #MAP-btn {
     width: 50%;
   }
   #landing-page .profile {
-    width: 50%;
+    width: 30%;
   }
   #landing-page .profile #profile-header {
     flex-direction: row;
   }
   #landing-page .contact {
-    width: 65%;
+    width: 30%;
     flex-direction: row;
     text-align: left;
   }

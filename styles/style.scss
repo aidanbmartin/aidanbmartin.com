@@ -260,7 +260,7 @@ html {
                 border: none;
                 border-radius: 10px;
                 transition: 0.2s ease-out;
-                box-shadow: var(--shadow-elevation-low);
+                //box-shadow: var(--shadow-elevation-low);
                 img {
                     width: 20px;
                     margin-left: 10px;
@@ -303,19 +303,21 @@ html {
         }
         // DEFAULT DESKTOP
         .page {
-            width: $page-width;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             text-align: center;
         }
         #landing-page {
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 120px;
+            padding-top: 120px;
+            background-color: $main-dark;
+            color: $main-light;
             //justify-content: space-around;
             //height: 800px;
             .profile {
@@ -324,7 +326,6 @@ html {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-                width: 75%;
                 #profile-header {
                     width: 100%;
                     display: flex;
@@ -338,7 +339,7 @@ html {
                     border-radius: 50%;
                     width: 200px;
                     height: 200px;
-                    box-shadow: var(--shadow-elevation-medium);
+                    //box-shadow: var(--shadow-elevation-medium);
                 }
                 #profile-text {
                     display: flex;
@@ -398,10 +399,11 @@ html {
                 margin-top: 40px;
                 text-decoration: none;
                 transition: 0.2s ease-out;
-                color: $main-dark;
+                color: $main-light;
             }
         }
         #skill-page {
+            width: $page-width;
             justify-content: flex-start;
             #xcode-icon {
                 padding-left: 3px;
@@ -457,6 +459,7 @@ html {
     
         }
         #project-page {
+            width: $page-width;
             justify-content: flex-start;
             .project {
                 position: relative;
@@ -570,6 +573,7 @@ html {
             }
         }
         #photography-page {
+            width: $page-width;
             //height: 800px;
             justify-content: flex-start;
             .genre {
@@ -704,6 +708,7 @@ html {
             
         }
         #photo-genre-page {
+            width: $page-width;
             margin-top: 128px;
             .image-gallery {
                 margin-top: 64px;
@@ -730,6 +735,7 @@ html {
             }
         }
         #clients-page {
+            width: $page-width;
             .clients-list {
                 display: flex;
                 flex-direction: row;
@@ -749,6 +755,7 @@ html {
             }
         }
         #blog {
+            width: $page-width;
             margin-top: 120px;
         }
         .genre-cats {
@@ -771,7 +778,7 @@ html {
     #landing-page {
         width: 100%;
         .profile {
-            width: 100%;
+            width: 85%;
             #profile-header {
                 flex-direction: column;
             }
@@ -811,7 +818,7 @@ html {
     #landing-page {
         width: 100%;
         .profile {
-            width: 100%;
+            width: 85%;
             #profile-header {
                 flex-direction: column;
             }
@@ -846,7 +853,7 @@ html {
     @include desktopNav();
     #landing-page {
         .profile {
-            width: 100%;
+            width: 85%;
             #profile-header {
                 flex-direction: row;
             }
@@ -874,7 +881,7 @@ html {
     @include desktopNav();
     #landing-page {
         .profile {
-            width: 75%;
+            width: 65%;
             #profile-header {
                 flex-direction: row;
             }
@@ -902,7 +909,7 @@ html {
     @include desktopNav();
     #landing-page {
         .profile {
-            width: 75%;
+            width: 50%;
             #profile-header {
                 flex-direction: row;
             }
@@ -931,13 +938,13 @@ html {
     #landing-page {
         width: 50%;
         .profile {
-            width: 50%;
+            width: 30%;
             #profile-header {
                 flex-direction: row;
             }
         }
         .contact {
-            width: 65%;
+            width: 30%;
             flex-direction: row;
             text-align: left;
         }
