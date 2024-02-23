@@ -194,6 +194,10 @@ html body #landing-page .contact {
   justify-content: space-around;
   margin-top: 40px;
 }
+html body #landing-page .contact p a {
+  text-decoration: underline;
+  color: #F8F7F4;
+}
 html body #landing-page .contact h2 {
   margin-bottom: 10px;
 }

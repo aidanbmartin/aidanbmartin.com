@@ -383,7 +383,12 @@ html {
                 justify-content: space-around;
                 //text-align: left;
                 margin-top: 40px;
-
+                p {
+                    a {
+                        text-decoration: underline;
+                        color: $main-light;
+                    }
+                }
                 h2 {
                     margin-bottom: 10px;
                 }
